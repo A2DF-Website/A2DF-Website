@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" type="image/png" href="img/favicon.png" />
-
+        
         <title>A2DF Informatique</title>
 
         <!-- Bootstrap Core CSS -->
@@ -32,12 +32,14 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+                
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <img src="img/favicon.png" width="50px">
                 <a class="navbar-brand" href="index.php">A2DF Informatique</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
