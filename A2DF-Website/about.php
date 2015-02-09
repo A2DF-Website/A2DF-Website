@@ -9,13 +9,13 @@
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">About
+                <h1 class="page-header">Nous connaître
                     <small>Subheading</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a>
                     </li>
-                    <li class="active">About</li>
+                    <li class="active">Nous connaître</li>
                 </ol>
             </div>
         </div>
@@ -27,10 +27,11 @@
                 <img class="img-responsive" src="http://placehold.it/750x450" alt="">
             </div>
             <div class="col-md-6">
-                <h2>About Modern Business</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptate nihil eum consectetur similique? Consectetur, quod, incidunt, harum nisi dolores delectus reprehenderit voluptatem perferendis dicta dolorem non blanditiis ex fugiat.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, magni, aperiam vitae illum voluptatum aut sequi impedit non velit ab ea pariatur sint quidem corporis eveniet. Odit, temporibus reprehenderit dolorum!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, consequuntur, modi mollitia corporis ipsa voluptate corrupti eum ratione ex ea praesentium quibusdam? Aut, in eum facere corrupti necessitatibus perspiciatis quis?</p>
+                <h2>A propos d'A2DF Informatique</h2>
+                <p>Ouvert en décembre 2010, A2DF Informatique a pour vocation de proposer localement tous les services nécessaires à l’exploitation de votre système d’information.</p>
+                <p>Que vous soyez un client particulier ou un artisan, que vous représentiez une PME ou une collectivité, notre but est de vous apporter professionnalisme et réactivité. Une réponse locale dans le domaine de l’informatique, du numérique et du multimédia, est-ce suffisant ?</p>
+                <p>Chez A2DF Informatique, nous pensons que non. Pour nous, rien n’est possible sans confiance et maîtrise des coûts.</p>
+                <p>C’est pour gagner cette confiance que nous avons décidé de nous implanter en plein cœur du vignoble nantais, dans un magasin ouvert à tous,  où vos interlocuteurs sont facilement identifiables. C’est à partir de cette relation humaine privilégiée que nous pouvons ensemble répondre à vos besoins par la qualité et la sérénité.</p>
             </div>
         </div>
         <!-- /.row -->
@@ -38,14 +39,14 @@
         <!-- Team Members -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Our Team</h2>
+                <h2 class="page-header">Notre équipe</h2>
             </div>
             <div class="col-md-4 text-center">
                 <div class="thumbnail">
                     <img class="img-responsive" src="http://placehold.it/750x450" alt="">
                     <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
+                        <h3>François BARAUD<br>
+                            <small>Gérant</small>
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
                         <ul class="list-inline">
@@ -63,8 +64,8 @@
                 <div class="thumbnail">
                     <img class="img-responsive" src="http://placehold.it/750x450" alt="">
                     <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
+                        <h3>Damien ANONYME<br>
+                            <small>Technicien</small>
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
                         <ul class="list-inline">
@@ -82,8 +83,8 @@
                 <div class="thumbnail">
                     <img class="img-responsive" src="http://placehold.it/750x450" alt="">
                     <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
+                        <h3>Kévin ANONYME<br>
+                            <small>Technicien</small>
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
                         <ul class="list-inline">
@@ -101,8 +102,8 @@
                 <div class="thumbnail">
                     <img class="img-responsive" src="http://placehold.it/750x450" alt="">
                     <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
+                        <h3>Manon ANONYME<br>
+                            <small>Secrétaire</small>
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
                         <ul class="list-inline">
@@ -120,8 +121,8 @@
                 <div class="thumbnail">
                     <img class="img-responsive" src="http://placehold.it/750x450" alt="">
                     <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
+                        <h3>Alexandre TALBOT<br>
+                            <small>Stagiaire</small>
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
                         <ul class="list-inline">
@@ -139,8 +140,8 @@
                 <div class="thumbnail">
                     <img class="img-responsive" src="http://placehold.it/750x450" alt="">
                     <div class="caption">
-                        <h3>John Smith<br>
-                            <small>Job Title</small>
+                        <h3>Hugo JEROME<br>
+                            <small>Stagiaire</small>
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
                         <ul class="list-inline">
@@ -160,7 +161,7 @@
         <!-- Our Customers -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Our Customers</h2>
+                <h2 class="page-header">Nos partenaires</h2>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
                 <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">

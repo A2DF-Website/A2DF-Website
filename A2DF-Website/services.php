@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Services
-                    <small>Subheading</small>
+                    <small></small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a>
@@ -33,20 +33,18 @@
         <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Services Panels</h2>
+                <h2 class="page-header">Services proposés</h2>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+                              <i class="fa fa-stethoscope fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
-                        <h4>Service One</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <h4>Diagnostic</h4>
                     </div>
                 </div>
             </div>
@@ -55,13 +53,11 @@
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                              <i class="fa fa-gear fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
-                        <h4>Service Two</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <h4>Montage</h4>
                     </div>
                 </div>
             </div>
@@ -70,13 +66,11 @@
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
+                              <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
-                        <h4>Service Three</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <h4>Dépannage</h4>
                     </div>
                 </div>
             </div>
@@ -85,13 +79,11 @@
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                              <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
-                        <h4>Service Four</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <h4>Formation</h4>
                     </div>
                 </div>
             </div>
@@ -100,18 +92,18 @@
         <!-- Service Tabs -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Service Tabs</h2>
+                <h2 class="page-header">Descriptions</h2>
             </div>
             <div class="col-lg-12">
 
                 <ul id="myTab" class="nav nav-tabs nav-justified">
-                    <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-tree"></i> Service One</a>
+                    <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-stethoscope"></i> Diagnostic</a>
                     </li>
-                    <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-car"></i> Service Two</a>
+                    <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-gear"></i> Montage</a>
                     </li>
-                    <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-support"></i> Service Three</a>
+                    <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-wrench"></i> Dépannage</a>
                     </li>
-                    <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-database"></i> Service Four</a>
+                    <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-graduation-cap"></i> Formation</a>
                     </li>
                 </ul>
 
