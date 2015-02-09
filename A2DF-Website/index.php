@@ -1,11 +1,11 @@
 <?php
-    include ('head.php');
+include ('head.php');
 ?>
 
 <body>
 
     <!-- Navigation -->
-    
+
 
     <!-- Header Carousel -->
     <header id="myCarousel" class="carousel slide">
@@ -64,98 +64,83 @@
                     </div>
                     <div class="panel-body">
                         <p>
-                            <li>Lundi: 14h - 19h</li>
-                            <li>Du Mardi au Vendredi: 9h30 - 19h</li>
-                            <li>Samedi: 10h - 12h</li>
-                            <li>Fermé le dimanche</li>
+                        <li>Lundi: 14h - 19h</li>
+                        <li>Du Mardi au Vendredi: 9h30 - 19h</li>
+                        <li>Samedi: 10h - 12h</li>
+                        <li>Fermé le dimanche</li>
                         </p>
-                        <a href="contact.php" class="btn btn-default">Contact</a>
+                        <a href="contact.php" class="btn btn-warning">Contact</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
+                        <h4><i class="fa fa-fw fa-cogs"></i> Services</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
+                        <p>
+                        <li>Diagnostic</li>
+                        <li>Montage</li>
+                        <li>Dépannage</li>
+                        <li>Formation</li>
+                        </p>
+                        <a href="#" class="btn btn-warning">En savoir plus</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
+                        <h4><i class="fa fa-fw fa-desktop"></i> Produits</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
+                        <p>
+                        <li>Ordinateurs Fixes</li>
+                        <li>Ordinateur Portables</li>
+                        <li>Tablettes</li>
+                        <li>Accessoires</li>
+                        </p>
+                        <a href="#" class="btn btn-warning">En savoir plus</a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Portfolio Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Portfolio Heading</h2>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-portfolio img-hover" src="http://placehold.it/700x450" alt="">
-                </a>
-            </div>
-        </div>
         <!-- /.row -->
 
         <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Modern Business Features</h2>
+                <h2 class="page-header">Pourquoi choisir A2DF ?</h2>
             </div>
             <div class="col-md-6">
-                <p>The Modern Business template by Start Bootstrap includes:</p>
-                <ul>
-                    <li><strong>Bootstrap v3.2.0</strong>
-                    </li>
-                    <li>jQuery v1.11.0</li>
-                    <li>Font Awesome v4.1.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+                <div class="well">
+                    <p>1. Un service de qualité adaptés à vos besoins:</p>
+                    <ul>
+                        <li>Nous vous conseillons</li>
+                        <li>Nous réalisons l'assemblage</li>
+                        <li>Nous offrons un service de dépannage à domicile</li>
+                        <li>Nous nous rendons disponible pour les professionnels</li>
+                    </ul>
+                    <p>2. Service après vente efficace et rapide</p>
+                    <ul>
+                        <li>Nos diagnostics et devis sont gratuits !</li>
+                        <li>Notre équipe de spécialiste réalise toutes réparations</li>
+                    </ul>
+                    <p>3. Des points forts qui font la différence</p>
+                    <ul>
+                        <li>Diagnostic et Devis Gratuits</li>
+                        <li>Un véritable conseil et avis de professionnel</li>
+                        <li>Des garanties de 2 à 10 ans</li>
+                        <li>Nous traitons le service après vente nous-mêmes</li>
+                    </ul>
+                    <img src="img/satisfait.PNG" class="media-left" width="15%" alt="Circular Image">
+                </div>
             </div>
             <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+                <img class="img-responsive" src="img/pic1.jpg" alt="">
             </div>
         </div>
         <!-- /.row -->
@@ -196,9 +181,9 @@
 
     <!-- Script to Activate the Carousel -->
     <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        })
     </script>
 
 </body>
