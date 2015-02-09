@@ -85,7 +85,7 @@ include ('head.php');
                         <li>Dépannage</li>
                         <li>Formation</li>
                         </p>
-                        <a href="#" class="btn btn-warning">En savoir plus</a>
+                        <a href="services.php" class="btn btn-warning">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@ include ('head.php');
                         <li>Tablettes</li>
                         <li>Accessoires</li>
                         </p>
-                        <a href="#" class="btn btn-warning">En savoir plus</a>
+                        <a href="produits.php" class="btn btn-warning">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -150,9 +150,6 @@ include ('head.php');
         <!-- Call to Action Section -->
         <div class="well">
             <div class="row">
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-                </div>
                 <div class="col-md-4">
                     <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
                 </div>
@@ -162,7 +159,7 @@ include ('head.php');
         <hr>
 
         <!-- Footer -->
-        <footer>
+        <footer id="footer" class="midnight-blue">
             <div class="row">
                 <div class="col-lg-12">
                     <p>Copyright &copy; Your Website 2014</p>
