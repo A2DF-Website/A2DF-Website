@@ -3,7 +3,7 @@
 ?>
 
 <body>
-   <!-- Page Content -->
+    <!-- Page Content -->
     <div class="container">
 
         <!-- Page Heading/Breadcrumbs -->
