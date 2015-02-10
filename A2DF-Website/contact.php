@@ -1,5 +1,5 @@
 <?php
-    include ('head.php');
+include ('head.php');
 ?>
 
 <body>
@@ -26,21 +26,25 @@
             <!-- Map Column -->
             <div class="col-md-8">
                 <!-- Embedded Google Map -->
-                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d347436.48721723276!2d-1.4783360082402797!3d47.13145653766308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x2f9612880c158cad!2sA2DF+Informatique!5e0!3m2!1sfr!2s!4v1423503596659"></iframe>
+                <iframe width="100%" height="452px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d347436.48721723276!2d-1.4783360082402797!3d47.13145653766308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x2f9612880c158cad!2sA2DF+Informatique!5e0!3m2!1sfr!2s!4v1423503596659"></iframe>
             </div>
+
             <!-- Contact Details Column -->
             <div class="col-md-4">
-                <h3></h3>
-                <p>
-                    2 Rue des Claircontres<br>44330 Le Pallet<br>
-                </p>
-                <p><i class="fa fa-phone"></i> 
-                    <abbr title="Phone">P</abbr>: 02 40 97 29 61</p>
-                <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">contact@a2dfinformatique.com</a>
-                </p>
-                
-                <ul class="list-unstyled list-inline list-social-icons">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-map-marker"></i> Coordonnées</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            2 Rue des Claircontres<br>44330 Le Pallet<br>
+                        </p>
+                        <p><i class="fa fa-phone"></i> 
+                            <abbr title="Phone"></abbr>: 02 40 97 29 61</p>
+                        <p><i class="fa fa-envelope-o"></i> 
+                            <abbr title="Email"></abbr>: <a href="mailto:name@example.com">contact@a2dfinformatique.com</a>
+                        </p>
+                        <ul class="list-unstyled list-inline list-social-icons">
                     <li>
                         <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
                     </li>
@@ -51,6 +55,8 @@
                         <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
                     </li>
                 </ul>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
@@ -62,14 +68,15 @@
                         <li>Lundi: 14h - 19h</li>
                         <li>Du Mardi au Vendredi: 9h30 - 19h</li>
                         <li>Samedi: 10h - 12h</li>
-                        <li>Fermé le dimanche</li>
+                        <li>Dimanche: fermé</li>
                         </p>
-                        <a href="contact.php" class="btn btn-warning">Contact</a>
                     </div>
                 </div>
             </div>
         </div>
         
+        <hr>
+
         <!-- /.row -->
 
         <!-- Contact Form -->
@@ -105,7 +112,7 @@
                     </div>
                     <div id="success"></div>
                     <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                    <button type="submit" class="btn btn-warning">Envoyer</button>
                 </form>
             </div>
 
