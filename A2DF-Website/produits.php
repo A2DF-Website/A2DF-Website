@@ -35,14 +35,19 @@ try {
         <div class="col-lg-12">
 
             <ul id="myTab" class="nav nav-tabs nav-justified">
-                <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-desktop"></i> PC Fixes</a>
+                <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-briefcase"></i> Accessoires</a>
                 </li>
-                <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-laptop"></i> PC Portables</a>
+                <li class=""><a href="#service-rwo" data-toggle="tab"><i class="fa fa-tablet"></i> Tablettes</a>
                 </li>
-                <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-tablet"></i> Tablettes</a>
+                <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-laptop"></i> Portables</a>
                 </li>
-                <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-briefcase"></i> Accessoires</a>
+                <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-hdd-o"></i> Fixes</a>
                 </li>
+                 <li class=""><a href="#service-five" data-toggle="tab"><i class="fa fa-desktop"></i> Ecrans</a>
+                </li>
+                <li class=""><a href="#service-six" data-toggle="tab"><i class="fa fa-print"></i> Imprimantes</a>
+                </li>
+                
             </ul>
 
             <div id="myTabContent" class="tab-content">
