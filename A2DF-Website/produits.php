@@ -64,18 +64,16 @@ try {
                         $idProduit = $produit['idProduit'];
                         $nom = $produit['nom'];
                         $marque = $produit['marque'];
-                        $categorie = $produit['categorie'];
                         $prix = $produit['prix'];
                         $image = $produit['image'];
                     }
 
                     echo "<div class = 'row'>";
-                    echo "<div class = 'col-md-3 img-portfolio'>";
+                    echo "<div class = 'col-md-3 img-portfolio thumbnail text-center'>";
                     echo "<a href = 'portfolio-item.html'>";
                     echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
                     echo "</a>";
-                    echo "<h3><span>" . $categorie . " </span>";
-                    echo "<span>" . $marque . " </span>";
+                    echo "<h3><span>" . $marque . " </span>";
                     echo "<span>" . $nom . " </span>";
                     echo "<span class='label label-warning'>" . $prix . "€</span><h3>";
                     echo "</div>";
@@ -101,18 +99,16 @@ try {
                         $idProduit = $produit['idProduit'];
                         $nom = $produit['nom'];
                         $marque = $produit['marque'];
-                        $categorie = $produit['categorie'];
                         $prix = $produit['prix'];
                         $image = $produit['image'];
                     }
 
                     echo "<div class = 'row'>";
-                    echo "<div class = 'col-md-3 img-portfolio'>";
+                    echo "<div class = 'col-md-3 img-portfolio thumbnail text-center'>";
                     echo "<a href = 'portfolio-item.html'>";
                     echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
                     echo "</a>";
-                    echo "<h3><span>" . $categorie . " </span>";
-                    echo "<span>" . $marque . " </span>";
+                    echo "<h3><span>" . $marque . " </span>";
                     echo "<span>" . $nom . " </span>";
                     echo "<span class='label label-warning'>" . $prix . "€</span><h3>";
                     echo "</div>";
@@ -138,18 +134,16 @@ try {
                         $idProduit = $produit['idProduit'];
                         $nom = $produit['nom'];
                         $marque = $produit['marque'];
-                        $categorie = $produit['categorie'];
                         $prix = $produit['prix'];
                         $image = $produit['image'];
                     }
 
                     echo "<div class = 'row'>";
-                    echo "<div class = 'col-md-3 img-portfolio'>";
+                    echo "<div class = 'col-md-3 img-portfolio thumbnail text-center'>";
                     echo "<a href = 'portfolio-item.html'>";
                     echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
                     echo "</a>";
-                    echo "<h3><span>" . $categorie . " </span>";
-                    echo "<span>" . $marque . " </span>";
+                    echo "<h3><span>" . $marque . " </span>";
                     echo "<span>" . $nom . " </span>";
                     echo "<span class='label label-warning'>" . $prix . "€</span><h3>";
                     echo "</div>";
@@ -175,20 +169,18 @@ try {
                         $idProduit = $produit['idProduit'];
                         $nom = $produit['nom'];
                         $marque = $produit['marque'];
-                        $categorie = $produit['categorie'];
                         $prix = $produit['prix'];
                         $image = $produit['image'];
                     }
 
                     echo "<div class = 'row'>";
-                    echo "<div class = 'col-md-3 img-portfolio'>";
+                    echo "<div class = 'col-md-3 img-portfolio thumbnail text-center'>";
                     echo "<a href = 'portfolio-item.html'>";
                     echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
                     echo "</a>";
-                    echo "<h4><span>" . $categorie . " </span>";
-                    echo "<span>" . $marque . " </span>";
+                    echo "<h3><span>" . $marque . " </span>";
                     echo "<span>" . $nom . " </span>";
-                    echo "<span class='label label-warning'>" . $prix . "€</span><h4>";
+                    echo "<span class='label label-warning'>" . $prix . "€</span><h3>";
                     echo "</div>";
                     echo "</div>";
                     ?>
