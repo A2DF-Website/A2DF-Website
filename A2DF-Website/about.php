@@ -63,10 +63,10 @@
             </div>
             <div class="col-md-4 text-center">
                 <div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                    <img class="img-responsive" src="img/kevin.jpg" alt="">
                     <div class="caption">
                         <h3>Kévin<br>
-                            <small>Technicien</small>
+                            <small>Technicien en alternance</small>
                         </h3>
                     </div>
                 </div>
