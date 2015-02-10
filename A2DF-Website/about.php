@@ -24,7 +24,7 @@
         <!-- Intro Content -->
         <div class="row">
             <div class="col-md-6">
-                <img class="img-responsive" src="img/magasin.jpg" alt="">
+                <img class="img-responsive" src="img/slide7.jpg" alt="">
             </div>
             <div class="col-md-6">
                 <h2>A propos d'A2DF Informatique</h2>

@@ -19,7 +19,7 @@ include ('head.php');
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('img/slide7.png');"></div>
+                <div class="fill" style="background-image:url('img/slide7.jpg');"></div>
                 <div class="carousel-caption">
                     <h2></h2>
                 </div>

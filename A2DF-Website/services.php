@@ -24,7 +24,7 @@
         <!-- Image Header -->
         <div class="row">
             <div class="col-lg-12">
-                <img class="img-responsive" src="img/atelier.png" alt="">
+                <img class="img-responsive" src="img/atelier.jpg" alt="">
             </div>
         </div>
         <!-- /.row -->
