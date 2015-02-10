@@ -39,7 +39,7 @@
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-circle fa-stack-2x text-warning"></i>
                               <i class="fa fa-stethoscope fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
@@ -52,7 +52,7 @@
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-circle fa-stack-2x text-warning"></i>
                               <i class="fa fa-gear fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
@@ -65,7 +65,7 @@
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-circle fa-stack-2x text-warning"></i>
                               <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
@@ -78,7 +78,7 @@
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-circle fa-stack-2x text-warning"></i>
                               <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
@@ -109,24 +109,74 @@
 
                 <div id="myTabContent" class="tab-content">
                     <div class="tab-pane fade active in" id="service-one">
-                        <h4>Service One</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                        <h4>Diagnostic</h4>
+                        <p>
+                            A2DF Informatique est constituée d'un technicien hautement qualifié afin de répondre au mieux à vos interrogations et vos problèmes techniques tels qu'ils soient. Il vous suffit d'apporter votre tour, ordinateur portable, tablette, ... et nous diagnostiquerons vos outils informatiques gratuitement !
+                        </p>
+                        <p>
+                            Lors d'un dépôt chez A2DF Informatique, nous tendons toujours à raccourcir votre délais d'attente, c'est pourquoi nous nous efforcons, dès <u>72h Maximum</u> d'attente, à vous tenir informer de la suite des réparations.
+                        </p>
                     </div>
                     <div class="tab-pane fade" id="service-two">
-                        <h4>Service Two</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                        <h4>Montage PC</h4>
+                        <p>
+                            A2DF vous proposes la création et le montage d'une ordinateur fixe en maximum 72 heures (selon disponibilités des stocks)
+                            En effet, l'entreprise vous conseilleras sur les futures composants de la machines en fonctions de vos besoins. Ceci débouchant sur un devis gratuit. 
+                        </p>
+                        <p>
+                            De plus, afin de vous offrir nos meilleurs services, nous vous installons automatiquement les logiciels suivants :
+                        </p> 
+                        </br>
+                        <img src="img/progs.png" class="img-responsive thumbnail center-block">
                     </div>
                     <div class="tab-pane fade" id="service-three">
-                        <h4>Service Three</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                        <div class="col-md-6">
+                            <img src="img/formations.png" class="img-responsive" alt="Tarifs formations" width="100%"> 
+                        </div>
+                        <div class="col-md-6">
+                        <h4>Nos Prestations</h4>
+                        <p>
+                        A2DF Informatique vous propose une :
+                        </p>
+                        <ul>
+                            <li><b>Assistance logiciel</b> (installation / paramétrages / télétransmission)</li>
+                            <li><b>Dépannage de tous les ordinateurs PC quel que soit la marque</b></li>
+                            <li><b>Mise à niveau des capacités de votre matériel</b> (mémoire,carte mère, processeur, carte graphique,disque dur, écran TFT,fonctionnalités ..)</li>
+                            <li><b>Maintenance préventive :</b> Lenteur d'exécution,blocage INTERNET, bruit mécanique,surchauffe,méssages parasites, sécurisation ..</li>
+                            <li><b>Récupération de données</b></li>
+                        </ul>
+                        </br>
+                        <p>
+                        <div><b><u>A2DF Informatique peut vous dépanner à votre domicile.</u></b></div> Ce service est mis en place afin de servir, entre aute,  les personnes à mobilité réduite et toutes personnes ne disposant pas de véhicule de transport. Ce service engendre un coût supplémentaire calculé en fonction du temps qui sépare la boutique à votre domicile.
+                        </p>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="service-four">
-                        <h4>Service Four</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                        <div class="col-md-6">
+                            <img src="img/formations.png" class="img-responsive" alt="Tarifs formations" width="100%"> 
+                        </div>
+                        <div class="col-md-6">
+                        <h4>Nos formations</h4>
+                        <p>
+                        A2DF Informatique vous propose des séances de Formation pour vous apprendre les bases de l'informatique ou pour vous perfectionner.
+                        Les formations se font à votre domicile avec vos outils informatique !
+                        Pour vous y inscrire c'est très simple, il vous suffit de prendre rendez vous avec le formateur en <a href="contact.php">contactant</a> A2DF informatique.
+                        </p>
+                        <ul>
+                            <li><b>Initialisation</b></li>
+                            <ul>
+                                <li>Traitement de texte</li>
+                                <li>Tableur</li>
+                                <li>Diaporama</li>
+                                <li>Organisation des documents</li>
+                                <li>Système d'exploitation XP, Vista, Seven, 8, Mac</li>
+                            </ul>
+                            <li><b>Gestion et retouches photos</b></li>
+                            <li><b>Protection d'un ordinateur</b> (antivirus)</li>
+                            <li><b>Conversation par internet</b> (Web-Cam, Skype)</li>
+                            <li><b>Formation à la demande</b></li>
+                        </ul>
+                        </div>
                     </div>
                 </div>
 
@@ -141,7 +191,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; A2DF Informatique 2015</p>
                 </div>
             </div>
         </footer>
