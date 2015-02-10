@@ -1,5 +1,17 @@
 <?php
-    include ('head.php');
+include ('head.php');
+include('private/conf.php');
+
+define('USER', $mysql_user);
+define('MDP', $mysql_pass);
+define('DSN', $mysql_host);
+try {
+    $connexion = new PDO(DSN, USER, MDP);
+    $connexion->query("SET CHARACTER SET utf8");
+} catch (PDOException $e) {
+    echo "Erreur : " . $e->getMessage() . "<br />";
+    $connexion = null;
+}
 ?>
 
 <body>
@@ -20,113 +32,171 @@
             </div>
         </div>
         <!-- /.row -->
+        <div class="col-lg-12">
 
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
+            <ul id="myTab" class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-desktop"></i> PC Fixes</a>
+                </li>
+                <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-laptop"></i> PC Portables</a>
+                </li>
+                <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-tablet"></i> Tablettes</a>
+                </li>
+                <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-briefcase"></i> Accessoires</a>
+                </li>
+            </ul>
+
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="service-one">
+                    <h4>PC Fixes</h4>
+                    <!-- Projects Row -->
+                    <?php
+                    global $connexion;
+                    $listeProduit = $connexion->query("SELECT idProduit, nom, marque.libelle AS marque, categorie.libelle AS categorie, prix, image
+                                                        FROM produit, marque, categorie
+                                                        WHERE produit.idMarque = marque.idMarque
+                                                        AND produit.idCategorie = categorie.idCategorie
+                                                        AND produit.idCategorie = 1
+                                                        ORDER BY produit.nom ASC;");
+
+                    foreach ($listeProduit as $produit) {
+
+                        //Récupération des données dans la base
+                        $idProduit = $produit['idProduit'];
+                        $nom = $produit['nom'];
+                        $marque = $produit['marque'];
+                        $categorie = $produit['categorie'];
+                        $prix = $produit['prix'];
+                        $image = $produit['image'];
+                    }
+
+                    echo "<div class = 'row'>";
+                    echo "<div class = 'col-md-3 img-portfolio'>";
+                    echo "<a href = 'portfolio-item.html'>";
+                    echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
+                    echo "</a>";
+                    echo "<h3><span>" . $categorie . " </span>";
+                    echo "<span>" . $marque . " </span>";
+                    echo "<span>" . $nom . " </span>";
+                    echo "<span class='label label-warning'>" . $prix . "€</span><h3>";
+                    echo "</div>";
+                    echo "</div>";
+                    ?>
+                    <!-- /.row -->
+                </div>
+                <div class="tab-pane fade" id="service-two">
+                    <h4>PC Portables</h4>
+                    <!-- Projects Row -->
+                    <?php
+                    global $connexion;
+                    $listeProduit = $connexion->query("SELECT idProduit, nom, marque.libelle AS marque, categorie.libelle AS categorie, prix, image
+                                                        FROM produit, marque, categorie
+                                                        WHERE produit.idMarque = marque.idMarque
+                                                        AND produit.idCategorie = categorie.idCategorie
+                                                        AND produit.idCategorie = 2
+                                                        ORDER BY produit.nom ASC;");
+
+                    foreach ($listeProduit as $produit) {
+
+                        //Récupération des données dans la base
+                        $idProduit = $produit['idProduit'];
+                        $nom = $produit['nom'];
+                        $marque = $produit['marque'];
+                        $categorie = $produit['categorie'];
+                        $prix = $produit['prix'];
+                        $image = $produit['image'];
+                    }
+
+                    echo "<div class = 'row'>";
+                    echo "<div class = 'col-md-3 img-portfolio'>";
+                    echo "<a href = 'portfolio-item.html'>";
+                    echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
+                    echo "</a>";
+                    echo "<h3><span>" . $categorie . " </span>";
+                    echo "<span>" . $marque . " </span>";
+                    echo "<span>" . $nom . " </span>";
+                    echo "<span class='label label-warning'>" . $prix . "€</span><h3>";
+                    echo "</div>";
+                    echo "</div>";
+                    ?>
+                    <!-- /.row -->
+                </div>
+                <div class="tab-pane fade" id="service-three">
+                    <h4>Tablettes</h4>
+                    <!-- Projects Row -->
+                    <?php
+                    global $connexion;
+                    $listeProduit = $connexion->query("SELECT idProduit, nom, marque.libelle AS marque, categorie.libelle AS categorie, prix, image
+                                                        FROM produit, marque, categorie
+                                                        WHERE produit.idMarque = marque.idMarque
+                                                        AND produit.idCategorie = categorie.idCategorie
+                                                        AND produit.idCategorie = 3
+                                                        ORDER BY produit.nom ASC;");
+
+                    foreach ($listeProduit as $produit) {
+
+                        //Récupération des données dans la base
+                        $idProduit = $produit['idProduit'];
+                        $nom = $produit['nom'];
+                        $marque = $produit['marque'];
+                        $categorie = $produit['categorie'];
+                        $prix = $produit['prix'];
+                        $image = $produit['image'];
+                    }
+
+                    echo "<div class = 'row'>";
+                    echo "<div class = 'col-md-3 img-portfolio'>";
+                    echo "<a href = 'portfolio-item.html'>";
+                    echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
+                    echo "</a>";
+                    echo "<h3><span>" . $categorie . " </span>";
+                    echo "<span>" . $marque . " </span>";
+                    echo "<span>" . $nom . " </span>";
+                    echo "<span class='label label-warning'>" . $prix . "€</span><h3>";
+                    echo "</div>";
+                    echo "</div>";
+                    ?>
+                    <!-- /.row -->
+                </div>
+                <div class="tab-pane fade" id="service-four">
+                    <h4>Accessoires</h4>
+                    <!-- Projects Row -->
+                    <?php
+                    global $connexion;
+                    $listeProduit = $connexion->query("SELECT idProduit, nom, marque.libelle AS marque, categorie.libelle AS categorie, prix, image
+                                                        FROM produit, marque, categorie
+                                                        WHERE produit.idMarque = marque.idMarque
+                                                        AND produit.idCategorie = categorie.idCategorie
+                                                        AND produit.idCategorie = 4
+                                                        ORDER BY produit.nom ASC;");
+
+                    foreach ($listeProduit as $produit) {
+
+                        //Récupération des données dans la base
+                        $idProduit = $produit['idProduit'];
+                        $nom = $produit['nom'];
+                        $marque = $produit['marque'];
+                        $categorie = $produit['categorie'];
+                        $prix = $produit['prix'];
+                        $image = $produit['image'];
+                    }
+
+                    echo "<div class = 'row'>";
+                    echo "<div class = 'col-md-3 img-portfolio'>";
+                    echo "<a href = 'portfolio-item.html'>";
+                    echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
+                    echo "</a>";
+                    echo "<h4><span>" . $categorie . " </span>";
+                    echo "<span>" . $marque . " </span>";
+                    echo "<span>" . $nom . " </span>";
+                    echo "<span class='label label-warning'>" . $prix . "€</span><h4>";
+                    echo "</div>";
+                    echo "</div>";
+                    ?>
+                    <!-- /.row -->
+                </div>
             </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
+
         </div>
-        <!-- /.row -->
-
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-                </a>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Pagination -->
-        <div class="row text-center">
-            <div class="col-lg-12">
-                <ul class="pagination">
-                    <li>
-                        <a href="#">&laquo;</a>
-                    </li>
-                    <li class="active">
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- /.row -->
 
         <hr>
 
