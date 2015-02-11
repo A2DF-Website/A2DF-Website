@@ -77,7 +77,11 @@ try {
                                 $occasion = $produit['occasion'];
 
                                 echo "<div class = 'col-md-3 col-sm-4 col-xs-12 img-portfolio text-center'>";
+                                echo "<div class='panel panel-default text-center'>";
+                                echo "<div class='panel-body'>";
                                 echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
+                                echo "</div>";
+                                echo "<div class='panel-heading'>";
                                 echo "<h3><span>" . $marque . " </span>";
                                 echo "<span>" . $libelle . " </span>";
                                 echo "<br />";
@@ -87,6 +91,8 @@ try {
                                     echo "<span class='label label-danger'>Occasion</span><h3>";
                                 }
 
+                                echo "</div>";
+                                echo "</div>";
                                 echo "</div>";
                             }
                             ?>
