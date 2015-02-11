@@ -35,7 +35,7 @@ try {
 
         <div class="col-lg-12">
             <ul id="myTab" class="nav nav-tabs nav-justified">
-                <li class=""><a href="#service-1" data-toggle="tab"><i class="fa fa-briefcase"></i> Accessoires</a>
+                <li class="active"><a href="#service-1" data-toggle="tab"><i class="fa fa-briefcase"></i> Accessoires</a>
                 </li>
                 <li class=""><a href="#service-2" data-toggle="tab"><i class="fa fa-tablet"></i> Tablettes</a>
                 </li>
@@ -77,9 +77,7 @@ try {
                                 $occasion = $produit['occasion'];
 
                                 echo "<div class = 'col-md-3 col-sm-4 col-xs-12 img-portfolio text-center'>";
-                                echo "<a href = 'portfolio-item.html'>";
                                 echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
-                                echo "</a>";
                                 echo "<h3><span>" . $marque . " </span>";
                                 echo "<span>" . $libelle . " </span>";
                                 echo "<span class='label label-warning'>" . $prix . "€</span> ";
