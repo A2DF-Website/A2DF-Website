@@ -39,10 +39,12 @@ include ('head.php');
             <div class="col-md-3 col-sm-6">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
+                        <a href="#service-one" data-toggle="tab">
                         <span class="fa-stack fa-5x">
                             <i class="fa fa-circle fa-stack-2x text-warning"></i>
                             <i class="fa fa-stethoscope fa-stack-1x fa-inverse"></i>
                         </span>
+                        </a>
                     </div>
                     <div class="panel-body">
                         <h4>Diagnostic</h4>
@@ -52,10 +54,12 @@ include ('head.php');
             <div class="col-md-3 col-sm-6">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
+                        <a href="#service-two" data-toggle="tab">
                         <span class="fa-stack fa-5x">
                             <i class="fa fa-circle fa-stack-2x text-warning"></i>
                             <i class="fa fa-gear fa-stack-1x fa-inverse"></i>
                         </span>
+                        </a>
                     </div>
                     <div class="panel-body">
                         <h4>Montage</h4>
@@ -65,10 +69,12 @@ include ('head.php');
             <div class="col-md-3 col-sm-6">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
+                        <a href="#service-three" data-toggle="tab">
                         <span class="fa-stack fa-5x">
                             <i class="fa fa-circle fa-stack-2x text-warning"></i>
                             <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
                         </span>
+                        </a>
                     </div>
                     <div class="panel-body">
                         <h4>Dépannage</h4>
@@ -78,10 +84,12 @@ include ('head.php');
             <div class="col-md-3 col-sm-6">
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
+                        <a href="#service-four" data-toggle="tab">
                         <span class="fa-stack fa-5x">
                             <i class="fa fa-circle fa-stack-2x text-warning"></i>
                             <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
                         </span>
+                        </a>
                     </div>
                     <div class="panel-body">
                         <h4>Formation</h4>
@@ -117,6 +125,7 @@ include ('head.php');
                         <p>
                             Lors d'un dépôt chez A2DF Informatique, nous tendons toujours à raccourcir votre délais d'attente, c'est pourquoi nous nous efforcons, dès <u>72h Maximum</u> d'attente, à vous tenir informer de la suite des réparations.
                         </p>
+                        <img class="img-responsive center-block" src="img/devisgratuit.png" alt="" width="150px" height="150px">
                     </div>
                     <div class="tab-pane fade" id="service-two">
                         <h4>Montage PC</h4>
@@ -266,5 +275,4 @@ include ('head.php');
     <script src="js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
