@@ -1,6 +1,7 @@
 <?php
-    include ('head.php');
+include ('head.php');
 ?>
+
 
 <body>
     <!-- Page Content -->
@@ -39,8 +40,8 @@
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-warning"></i>
-                              <i class="fa fa-stethoscope fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-warning"></i>
+                            <i class="fa fa-stethoscope fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
@@ -52,8 +53,8 @@
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-warning"></i>
-                              <i class="fa fa-gear fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-warning"></i>
+                            <i class="fa fa-gear fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
@@ -65,8 +66,8 @@
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-warning"></i>
-                              <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-warning"></i>
+                            <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
@@ -78,8 +79,8 @@
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <span class="fa-stack fa-5x">
-                              <i class="fa fa-circle fa-stack-2x text-warning"></i>
-                              <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-circle fa-stack-2x text-warning"></i>
+                            <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
                         </span>
                     </div>
                     <div class="panel-body">
@@ -127,28 +128,87 @@
                             De plus, afin de vous offrir nos meilleurs services, nous vous installons automatiquement les logiciels suivants :
                         </p> 
                         </br>
-                        <img src="img/progs.png" class="img-responsive thumbnail center-block">
+                        <div class="row-centered">
+                            <div class="col-lg-12">
+                                <h2 class="page-header">Logiciels préinstallés</h2>
+                            </div>
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                <a href="http://www.kaspersky.fr/" title="Kaspersky"><img class="img-responsive customer-img" src="img/kaspersky.png" alt="" width="64px" height="64px"></a>
+                            </div>
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                <a href="https://www.mozilla.org/fr/" title="Firefox"><img class="img-responsive customer-img" src="img/firefox.png" alt="" width="64px" height="64px"></a>
+                            </div>
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                <a href="https://www.google.com/chrome/" title="Chrome"><img class="img-responsive customer-img" src="img/chrome.png" alt="" width="64px" height="64px"></a>
+                            </div>
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                <a href="http://www.java.com/fr/" title="Java"><img class="img-responsive customer-img" src="img/java.png" alt="" width="64px" height="64px"></a>
+                            </div>
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                <a href="http://www.win-rar.com/" title="winRAR"><img class="img-responsive customer-img" src="img/winrar.png" alt="" width="64px" height="64px"></a>
+                            </div>
+
+                        </div>
+                        </br>
+                        <div class="row-centered">
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                <a href="http://www.teamviewer.com/fr/" title="Team Viewer"><img class="img-responsive customer-img" src="img/teamviewer.png" alt="" width="64px" height="64px"></a>
+                            </div>
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                <a href="http://www.google.com/intl/fr/picasa/" title="Picasa"><img class="img-responsive customer-img" src="img/picasa.png" alt="" width="64px" height="64px"></a>
+                            </div>
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                <a href="http://www.videolan.org/vlc/" title="VLC"><img class="img-responsive customer-img" src="img/vlc.png" alt="" width="64px" height="64px"></a>
+                            </div>
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                 <a href="http://www.skype.com/fr/" title="Skype"><img class="img-responsive customer-img" src="img/skype.png" alt="" width="64px" height="64px"></a>
+                            </div>
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                <a href="http://www.apple.com/fr/itunes/download/" title="iTunes"><img class="img-responsive customer-img" src="img/itunes.png" alt="" width="64px" height="64px"></a>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="row-centered">
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                <a href="https://www.openoffice.org/fr/" title="Open Office"><img class="img-responsive customer-img" src="img/openoffice.png" alt="" width="64px" height="64px"></a>
+                            </div>
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                <a href="https://www.apple.com/fr/quicktime/download/" title="Quick Time"><img class="img-responsive customer-img" src="img/quicktime.png" alt="" width="64px" height="64px"></a>
+                            </div>
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                <a href="https://www.piriform.com/ccleaner" title="Ccleaner"><img class="img-responsive customer-img" src="img/ccleaner.png" alt="" width="64px" height="64px"></a>
+                            </div>
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                <a href="http://fr.malwarebytes.org/" title="MalwareBytes"><img class="img-responsive customer-img" src="img/malwarebytes.png" alt="" width="64px" height="64px"></a>
+                            </div>
+                            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
+                                <a href="http://get.adobe.com/fr/reader/" title="MalwareBytes"><img class="img-responsive customer-img" src="img/adobe.png" alt="" width="64px" height="64px"></a>
+                            </div>
+                        </div>
+
                     </div>
+
+
                     <div class="tab-pane fade" id="service-three">
                         <div class="col-md-6">
                             <img src="img/formations.png" class="img-responsive" alt="Tarifs formations" width="100%"> 
                         </div>
                         <div class="col-md-6">
-                        <h4>Nos Prestations</h4>
-                        <p>
-                        A2DF Informatique vous propose une :
-                        </p>
-                        <ul>
-                            <li><b>Assistance logiciel</b> (installation / paramétrages / télétransmission)</li>
-                            <li><b>Dépannage de tous les ordinateurs PC quel que soit la marque</b></li>
-                            <li><b>Mise à niveau des capacités de votre matériel</b> (mémoire,carte mère, processeur, carte graphique,disque dur, écran TFT,fonctionnalités ..)</li>
-                            <li><b>Maintenance préventive :</b> Lenteur d'exécution,blocage INTERNET, bruit mécanique,surchauffe,méssages parasites, sécurisation ..</li>
-                            <li><b>Récupération de données</b></li>
-                        </ul>
-                        </br>
-                        <p>
-                        <div><b><u>A2DF Informatique peut vous dépanner à votre domicile.</u></b></div> Ce service est mis en place afin de servir, entre aute,  les personnes à mobilité réduite et toutes personnes ne disposant pas de véhicule de transport. Ce service engendre un coût supplémentaire calculé en fonction du temps qui sépare la boutique à votre domicile.
-                        </p>
+                            <h4>Nos Prestations</h4>
+                            <p>
+                                A2DF Informatique vous propose une :
+                            </p>
+                            <ul>
+                                <li><b>Assistance logiciel</b> (installation / paramétrages / télétransmission)</li>
+                                <li><b>Dépannage de tous les ordinateurs PC quel que soit la marque</b></li>
+                                <li><b>Mise à niveau des capacités de votre matériel</b> (mémoire,carte mère, processeur, carte graphique,disque dur, écran TFT,fonctionnalités ..)</li>
+                                <li><b>Maintenance préventive :</b> Lenteur d'exécution,blocage INTERNET, bruit mécanique,surchauffe,méssages parasites, sécurisation ..</li>
+                                <li><b>Récupération de données</b></li>
+                            </ul>
+                            </br>
+                            <p>
+                            <div><b><u>A2DF Informatique peut vous dépanner à votre domicile.</u></b></div> Ce service est mis en place afin de servir, entre aute,  les personnes à mobilité réduite et toutes personnes ne disposant pas de véhicule de transport. Ce service engendre un coût supplémentaire calculé en fonction du temps qui sépare la boutique à votre domicile.
+                            </p>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="service-four">
@@ -156,26 +216,26 @@
                             <img src="img/formations.png" class="img-responsive" alt="Tarifs formations" width="100%"> 
                         </div>
                         <div class="col-md-6">
-                        <h4>Nos formations</h4>
-                        <p>
-                        A2DF Informatique vous propose des séances de Formation pour vous apprendre les bases de l'informatique ou pour vous perfectionner.
-                        Les formations se font à votre domicile avec vos outils informatique !
-                        Pour vous y inscrire c'est très simple, il vous suffit de prendre rendez vous avec le formateur en <a href="contact.php">contactant</a> A2DF informatique.
-                        </p>
-                        <ul>
-                            <li><b>Initialisation</b></li>
+                            <h4>Nos formations</h4>
+                            <p>
+                                A2DF Informatique vous propose des séances de Formation pour vous apprendre les bases de l'informatique ou pour vous perfectionner.
+                                Les formations se font à votre domicile avec vos outils informatique !
+                                Pour vous y inscrire c'est très simple, il vous suffit de prendre rendez vous avec le formateur en <a href="contact.php">contactant</a> A2DF informatique.
+                            </p>
                             <ul>
-                                <li>Traitement de texte</li>
-                                <li>Tableur</li>
-                                <li>Diaporama</li>
-                                <li>Organisation des documents</li>
-                                <li>Système d'exploitation XP, Vista, Seven, 8, Mac</li>
+                                <li><b>Initialisation</b></li>
+                                <ul>
+                                    <li>Traitement de texte</li>
+                                    <li>Tableur</li>
+                                    <li>Diaporama</li>
+                                    <li>Organisation des documents</li>
+                                    <li>Système d'exploitation XP, Vista, Seven, 8, Mac</li>
+                                </ul>
+                                <li><b>Gestion et retouches photos</b></li>
+                                <li><b>Protection d'un ordinateur</b> (antivirus)</li>
+                                <li><b>Conversation par internet</b> (Web-Cam, Skype)</li>
+                                <li><b>Formation à la demande</b></li>
                             </ul>
-                            <li><b>Gestion et retouches photos</b></li>
-                            <li><b>Protection d'un ordinateur</b> (antivirus)</li>
-                            <li><b>Conversation par internet</b> (Web-Cam, Skype)</li>
-                            <li><b>Formation à la demande</b></li>
-                        </ul>
                         </div>
                     </div>
                 </div>
