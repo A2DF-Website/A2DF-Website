@@ -35,17 +35,17 @@ try {
 
         <div class="col-lg-12">
             <ul id="myTab" class="nav nav-tabs nav-justified">
-                <li class="active"><a href="#service-1" data-toggle="tab"><i class="fa fa-briefcase"></i> Accessoires</a>
+                <li class="active"><a href="#onglet-1" data-toggle="tab"><i class="fa fa-briefcase"></i> Accessoires</a>
                 </li>
-                <li class=""><a href="#service-2" data-toggle="tab"><i class="fa fa-tablet"></i> Tablettes</a>
+                <li class=""><a href="#onglet-2" data-toggle="tab"><i class="fa fa-tablet"></i> Tablettes</a>
                 </li>
-                <li class=""><a href="#service-3" data-toggle="tab"><i class="fa fa-laptop"></i> Portables</a>
+                <li class=""><a href="#onglet-3" data-toggle="tab"><i class="fa fa-laptop"></i> Portables</a>
                 </li>
-                <li class=""><a href="#service-4" data-toggle="tab"><i class="fa fa-hdd-o"></i> Fixes</a>
+                <li class=""><a href="#onglet-4" data-toggle="tab"><i class="fa fa-hdd-o"></i> Fixes</a>
                 </li>
-                <li class=""><a href="#service-5" data-toggle="tab"><i class="fa fa-desktop"></i> Ecrans</a>
+                <li class=""><a href="#onglet-5" data-toggle="tab"><i class="fa fa-desktop"></i> Ecrans</a>
                 </li>
-                <li class=""><a href="#service-6" data-toggle="tab"><i class="fa fa-print"></i> Imprimantes</a>
+                <li class=""><a href="#onglet-6" data-toggle="tab"><i class="fa fa-print"></i> Imprimantes</a>
                 </li>
             </ul>
             <hr>
@@ -53,7 +53,7 @@ try {
                 <?php
                 for ($i = 1; $i <= 6; $i++) {
                     ?>
-                    <div class="tab-pane fade active in" id="service-<?= $i ?>">
+                    <div class="tab-pane fade active in" id="onglet-<?= $i ?>">
 
                         <!-- Projects Row -->
                         <div class = 'row'>
@@ -80,6 +80,7 @@ try {
                                 echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
                                 echo "<h3><span>" . $marque . " </span>";
                                 echo "<span>" . $libelle . " </span>";
+                                echo "<br />";
                                 echo "<span class='label label-warning'>" . $prix . "€</span> ";
 
                                 if ($occasion == 1) {
