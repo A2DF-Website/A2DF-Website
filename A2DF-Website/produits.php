@@ -32,61 +32,71 @@ try {
             </div>
         </div>
         <!-- /.row -->
+
         <div class="col-lg-12">
-
             <ul id="myTab" class="nav nav-tabs nav-justified">
-                <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-briefcase"></i> Accessoires</a>
+                <li class=""><a href="#service-1" data-toggle="tab"><i class="fa fa-briefcase"></i> Accessoires</a>
                 </li>
-                <li class=""><a href="#service-rwo" data-toggle="tab"><i class="fa fa-tablet"></i> Tablettes</a>
+                <li class=""><a href="#service-2" data-toggle="tab"><i class="fa fa-tablet"></i> Tablettes</a>
                 </li>
-                <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-laptop"></i> Portables</a>
+                <li class=""><a href="#service-3" data-toggle="tab"><i class="fa fa-laptop"></i> Portables</a>
                 </li>
-                <li class=""><a href="#service-four" data-toggle="tab"><i class="fa fa-hdd-o"></i> Fixes</a>
+                <li class=""><a href="#service-4" data-toggle="tab"><i class="fa fa-hdd-o"></i> Fixes</a>
                 </li>
-                 <li class=""><a href="#service-five" data-toggle="tab"><i class="fa fa-desktop"></i> Ecrans</a>
+                <li class=""><a href="#service-5" data-toggle="tab"><i class="fa fa-desktop"></i> Ecrans</a>
                 </li>
-                <li class=""><a href="#service-six" data-toggle="tab"><i class="fa fa-print"></i> Imprimantes</a>
+                <li class=""><a href="#service-6" data-toggle="tab"><i class="fa fa-print"></i> Imprimantes</a>
                 </li>
-                
             </ul>
-
+            <hr>
             <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade active in" id="service-one">
-                    <h4>Accessoires</h4>
-                    <!-- Projects Row -->
-                    <?php
-                    global $connexion;
-                    $listeProduit = $connexion->query(" SELECT idProduit, produit.libelle AS nom, marque.libelle AS marque, type.libelle AS type, prix, image, occasion
-                                                        FROM produit, marque, type
-                                                        WHERE produit.idMarque = marque.idMarque
-                                                        AND produit.idType = type.idType
-                                                        AND produit.idType = 1
-                                                        ORDER BY produit.libelle ASC;");
-
-                    foreach ($listeProduit as $produit) {
-
-                        //Récupération des données dans la base
-                        $idProduit = $produit['idProduit'];
-                        $libelle = $produit['nom'];
-                        $marque = $produit['marque'];
-                        $prix = $produit['prix'];
-                        $image = $produit['image'];
-                        $occasion = $produit['occasion'];
-                    }
-
-                    echo "<div class = 'row'>";
-                    echo "<div class = 'col-md-3 img-portfolio thumbnail text-center'>";
-                    echo "<a href = 'portfolio-item.html'>";
-                    echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
-                    echo "</a>";
-                    echo "<h3><span>" . $marque . " </span>";
-                    echo "<span>" . $libelle . " </span>";
-                    echo "<span class='label label-warning'>" . $prix . "€</span><h3>";
-                    echo "</div>";
-                    echo "</div>";
+                <?php
+                for ($i = 1; $i <= 6; $i++) {
                     ?>
-                    <!-- /.row -->
-                </div>
+                    <div class="tab-pane fade active in" id="service-<?= $i ?>">
+
+                        <!-- Projects Row -->
+                        <div class = 'row'>
+                            <?php
+                            global $connexion;
+                            $listeProduit = $connexion->query(" SELECT idProduit, produit.libelle AS nom, marque.libelle AS marque, type.libelle AS type, prix, image, occasion
+                                                                FROM produit, marque, type
+                                                                WHERE produit.idMarque = marque.idMarque
+                                                                AND produit.idType = type.idType
+                                                                AND produit.idType = $i
+                                                                ORDER BY produit.libelle ASC;");
+
+                            foreach ($listeProduit as $produit) {
+
+                                //Récupération des données dans la base
+                                $idProduit = $produit['idProduit'];
+                                $libelle = $produit['nom'];
+                                $marque = $produit['marque'];
+                                $prix = $produit['prix'];
+                                $image = $produit['image'];
+                                $occasion = $produit['occasion'];
+
+                                echo "<div class = 'col-md-3 col-sm-4 col-xs-12 img-portfolio text-center'>";
+                                echo "<a href = 'portfolio-item.html'>";
+                                echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
+                                echo "</a>";
+                                echo "<h3><span>" . $marque . " </span>";
+                                echo "<span>" . $libelle . " </span>";
+                                echo "<span class='label label-warning'>" . $prix . "€</span> ";
+
+                                if ($occasion == 1) {
+                                    echo "<span class='label label-danger'>Occasion</span><h3>";
+                                }
+
+                                echo "</div>";
+                            }
+                            ?>
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <?php
+                }
+                ?>
             </div>
         </div>
 
@@ -111,5 +121,4 @@ try {
     <script src="js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
