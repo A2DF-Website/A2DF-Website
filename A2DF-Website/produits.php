@@ -52,130 +52,26 @@ try {
 
             <div id="myTabContent" class="tab-content">
                 <div class="tab-pane fade active in" id="service-one">
-                    <h4>PC Fixes</h4>
-                    <!-- Projects Row -->
-                    <?php
-                    global $connexion;
-                    $listeProduit = $connexion->query("SELECT idProduit, nom, marque.libelle AS marque, categorie.libelle AS categorie, prix, image
-                                                        FROM produit, marque, categorie
-                                                        WHERE produit.idMarque = marque.idMarque
-                                                        AND produit.idCategorie = categorie.idCategorie
-                                                        AND produit.idCategorie = 1
-                                                        ORDER BY produit.nom ASC;");
-
-                    foreach ($listeProduit as $produit) {
-
-                        //Récupération des données dans la base
-                        $idProduit = $produit['idProduit'];
-                        $nom = $produit['nom'];
-                        $marque = $produit['marque'];
-                        $prix = $produit['prix'];
-                        $image = $produit['image'];
-                    }
-
-                    echo "<div class = 'row'>";
-                    echo "<div class = 'col-md-3 img-portfolio thumbnail text-center'>";
-                    echo "<a href = 'portfolio-item.html'>";
-                    echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
-                    echo "</a>";
-                    echo "<h3><span>" . $marque . " </span>";
-                    echo "<span>" . $nom . " </span>";
-                    echo "<span class='label label-warning'>" . $prix . "€</span><h3>";
-                    echo "</div>";
-                    echo "</div>";
-                    ?>
-                    <!-- /.row -->
-                </div>
-                <div class="tab-pane fade" id="service-two">
-                    <h4>PC Portables</h4>
-                    <!-- Projects Row -->
-                    <?php
-                    global $connexion;
-                    $listeProduit = $connexion->query("SELECT idProduit, nom, marque.libelle AS marque, categorie.libelle AS categorie, prix, image
-                                                        FROM produit, marque, categorie
-                                                        WHERE produit.idMarque = marque.idMarque
-                                                        AND produit.idCategorie = categorie.idCategorie
-                                                        AND produit.idCategorie = 2
-                                                        ORDER BY produit.nom ASC;");
-
-                    foreach ($listeProduit as $produit) {
-
-                        //Récupération des données dans la base
-                        $idProduit = $produit['idProduit'];
-                        $nom = $produit['nom'];
-                        $marque = $produit['marque'];
-                        $prix = $produit['prix'];
-                        $image = $produit['image'];
-                    }
-
-                    echo "<div class = 'row'>";
-                    echo "<div class = 'col-md-3 img-portfolio thumbnail text-center'>";
-                    echo "<a href = 'portfolio-item.html'>";
-                    echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
-                    echo "</a>";
-                    echo "<h3><span>" . $marque . " </span>";
-                    echo "<span>" . $nom . " </span>";
-                    echo "<span class='label label-warning'>" . $prix . "€</span><h3>";
-                    echo "</div>";
-                    echo "</div>";
-                    ?>
-                    <!-- /.row -->
-                </div>
-                <div class="tab-pane fade" id="service-three">
-                    <h4>Tablettes</h4>
-                    <!-- Projects Row -->
-                    <?php
-                    global $connexion;
-                    $listeProduit = $connexion->query("SELECT idProduit, nom, marque.libelle AS marque, categorie.libelle AS categorie, prix, image
-                                                        FROM produit, marque, categorie
-                                                        WHERE produit.idMarque = marque.idMarque
-                                                        AND produit.idCategorie = categorie.idCategorie
-                                                        AND produit.idCategorie = 3
-                                                        ORDER BY produit.nom ASC;");
-
-                    foreach ($listeProduit as $produit) {
-
-                        //Récupération des données dans la base
-                        $idProduit = $produit['idProduit'];
-                        $nom = $produit['nom'];
-                        $marque = $produit['marque'];
-                        $prix = $produit['prix'];
-                        $image = $produit['image'];
-                    }
-
-                    echo "<div class = 'row'>";
-                    echo "<div class = 'col-md-3 img-portfolio thumbnail text-center'>";
-                    echo "<a href = 'portfolio-item.html'>";
-                    echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
-                    echo "</a>";
-                    echo "<h3><span>" . $marque . " </span>";
-                    echo "<span>" . $nom . " </span>";
-                    echo "<span class='label label-warning'>" . $prix . "€</span><h3>";
-                    echo "</div>";
-                    echo "</div>";
-                    ?>
-                    <!-- /.row -->
-                </div>
-                <div class="tab-pane fade" id="service-four">
                     <h4>Accessoires</h4>
                     <!-- Projects Row -->
                     <?php
                     global $connexion;
-                    $listeProduit = $connexion->query("SELECT idProduit, nom, marque.libelle AS marque, categorie.libelle AS categorie, prix, image
-                                                        FROM produit, marque, categorie
+                    $listeProduit = $connexion->query(" SELECT idProduit, produit.libelle AS nom, marque.libelle AS marque, type.libelle AS type, prix, image, occasion
+                                                        FROM produit, marque, type
                                                         WHERE produit.idMarque = marque.idMarque
-                                                        AND produit.idCategorie = categorie.idCategorie
-                                                        AND produit.idCategorie = 4
-                                                        ORDER BY produit.nom ASC;");
+                                                        AND produit.idType = type.idType
+                                                        AND produit.idType = 1
+                                                        ORDER BY produit.libelle ASC;");
 
                     foreach ($listeProduit as $produit) {
 
                         //Récupération des données dans la base
                         $idProduit = $produit['idProduit'];
-                        $nom = $produit['nom'];
+                        $libelle = $produit['nom'];
                         $marque = $produit['marque'];
                         $prix = $produit['prix'];
                         $image = $produit['image'];
+                        $occasion = $produit['occasion'];
                     }
 
                     echo "<div class = 'row'>";
@@ -184,7 +80,7 @@ try {
                     echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
                     echo "</a>";
                     echo "<h3><span>" . $marque . " </span>";
-                    echo "<span>" . $nom . " </span>";
+                    echo "<span>" . $libelle . " </span>";
                     echo "<span class='label label-warning'>" . $prix . "€</span><h3>";
                     echo "</div>";
                     echo "</div>";
@@ -192,7 +88,6 @@ try {
                     <!-- /.row -->
                 </div>
             </div>
-
         </div>
 
         <hr>
