@@ -46,13 +46,13 @@ include ('head.php');
                         </p>
                         <ul class="list-unstyled list-inline list-social-icons">
                     <li>
-                        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+                        <a href="https://www.facebook.com/pages/A2DFinformatique/570125046357439"><i class="fa fa-facebook-square fa-2x"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+                        <a href="https://twitter.com/A2DFInformatiqu"><i class="fa fa-twitter-square fa-2x"></i></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                        <a href="https://plus.google.com/u/0/101285302052580331310/about?hl=fr&gl=fr"><i class="fa fa-google-plus-square fa-2x"></i></a>
                     </li>
                 </ul>
                     </div>
