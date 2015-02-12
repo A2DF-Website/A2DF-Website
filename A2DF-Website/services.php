@@ -222,7 +222,7 @@ include ('head.php');
                     </div>
                     <div class="tab-pane fade" id="service-four">
                         <div class="col-md-6">
-                            <img src="img/formations.png" class="img-responsive" alt="Tarifs formations" width="100%"> 
+                            <iframe src="https://www.google.com/maps/d/embed?mid=zblN0uMVe2co.kZdg8mLH90hw" width="100%" height="452px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> 
                         </div>
                         <div class="col-md-6">
                             <h4>Nos formations</h4>

@@ -39,8 +39,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
-                <a class="navbar-brand" href="index.php">A2DF Informatique<img src="img/favicon.png" class="pull-right" width="50px"></a>
+                <a class="navbar-brand" href="index.php"><img src="img/headlogo.png" class="pull-right" width="130px"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

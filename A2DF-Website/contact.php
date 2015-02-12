@@ -33,7 +33,7 @@ include ('head.php');
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-map-marker"></i> Coordonnées</h4>
+                        <h4><i class="fa fa-fw fa-map-marker text-warning"></i> Coordonnées</h4>
                     </div>
                     <div class="panel-body">
                         <p>
@@ -61,7 +61,7 @@ include ('head.php');
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-clock-o"></i> Horaires d'ouvertures</h4>
+                        <h4><i class="fa fa-fw fa-clock-o text-warning"></i> Horaires d'ouvertures</h4>
                     </div>
                     <div class="panel-body">
                         <p>
