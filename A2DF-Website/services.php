@@ -200,7 +200,8 @@ include ('head.php');
 
                     <div class="tab-pane fade" id="service-three">
                         <div class="col-md-6">
-                            <img src="img/formations.png" class="img-responsive" alt="Tarifs formations" width="100%"> 
+                            </br>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=zblN0uMVe2co.kZdg8mLH90hw" width="100%" height="450px"></iframe>  
                         </div>
                         <div class="col-md-6">
                             <h4>Nos Prestations</h4>
@@ -222,7 +223,8 @@ include ('head.php');
                     </div>
                     <div class="tab-pane fade" id="service-four">
                         <div class="col-md-6">
-                            <iframe src="https://www.google.com/maps/d/embed?mid=zblN0uMVe2co.kZdg8mLH90hw" width="100%" height="452px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> 
+                            </br>
+                            <iframe src="https://www.google.com/maps/d/embed?mid=zblN0uMVe2co.kZdg8mLH90hw" width="100%" height="450px"></iframe> 
                         </div>
                         <div class="col-md-6">
                             <h4>Nos formations</h4>
@@ -245,6 +247,8 @@ include ('head.php');
                                 <li><b>Conversation par internet</b> (Web-Cam, Skype)</li>
                                 <li><b>Formation à la demande</b></li>
                             </ul>
+                            <hr>
+                            <img src="img/zone.png" class="img-responsive center-block" width="60%">
                         </div>
                     </div>
                 </div>
