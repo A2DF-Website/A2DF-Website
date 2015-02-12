@@ -11,7 +11,7 @@ include ('head.php');
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Services
-                    <small></small>
+                    <small>- Diagnostic gratuit / Delai de 72H maximum</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.php">Accueil</a>
@@ -261,10 +261,13 @@ include ('head.php');
         <hr>
 
         <!-- Footer -->
-        <footer>
+<footer id="footer" class="midnight-blue">
             <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; A2DF Informatique 2015</p>
+                <div class="col-md-12">
+                    <p>Copyright &copy; Hugo JEROME & Alexandre TALBOT 2015
+                    <a href="https://www.facebook.com/pages/A2DFinformatique/570125046357439"><i class="fa fa-facebook-square fa-2x pull-right" float="right"></i></a>
+                        <a href="https://twitter.com/A2DFInformatiqu"><i class="fa fa-twitter-square fa-2x pull-right" float="right"></i></a></p>
+
                 </div>
             </div>
         </footer>

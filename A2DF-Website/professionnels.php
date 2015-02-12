@@ -117,8 +117,8 @@ include ('head.php');
         <footer id="footer" class="midnight-blue">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Copyright &copy; A2DF Informatique 2015
-                        <a href="https://www.facebook.com/pages/A2DFinformatique/570125046357439"><i class="fa fa-facebook-square fa-2x pull-right" float="right"></i></a>
+                    <p>Copyright &copy; Hugo JEROME & Alexandre TALBOT 2015
+                    <a href="https://www.facebook.com/pages/A2DFinformatique/570125046357439"><i class="fa fa-facebook-square fa-2x pull-right" float="right"></i></a>
                         <a href="https://twitter.com/A2DFInformatiqu"><i class="fa fa-twitter-square fa-2x pull-right" float="right"></i></a></p>
 
                 </div>

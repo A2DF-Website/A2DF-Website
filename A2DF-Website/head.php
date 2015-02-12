@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" type="image/png" href="img/favicon.png" />
-        
+
         <title>A2DF Informatique</title>
 
         <!-- Bootstrap Core CSS -->
@@ -32,7 +32,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                
+
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -44,6 +44,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.php">Accueil</a>
+                    </li>
                     <li>
                         <a href="about.php">Nous connaître</a>
                     </li>
@@ -57,47 +60,16 @@
                         <a href="contact.php">Contact</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Autres pages <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Plus <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="blog-home-1.html">blog-home-1.html</a>
+                                <a href="professionnels.php">Professionnels</a>
                             </li>
                             <li>
-                                <a href="blog-home-2.html">blog-home-2.html</a>
+                                <a href="conditions.php">Conditions générales</a>
                             </li>
                             <li>
-                                <a href="blog-post.html">blog-post.html</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">faq.html</a>
-                            </li>
-                            <li>
-                                <a href="full-width.html">full-width.html</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-1-col.html">portfolio-1-col.html</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">portfolio-2-col.html</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">portfolio-3-col.html</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">portfolio-4-col.html</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">portfolio-item.html</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">pricing.html</a>
-                            </li>
-                            <li>
-                                <a href="services.html">services.html</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">sidebar.html</a>
-                            </li>
+                                <a href="http://192.168.0.30/A2DF/login.php"><i class="fa fa-lock"></i> Admin</a>
                         </ul>
                     </li>
                 </ul>
@@ -106,5 +78,5 @@
         </div>
         <!-- /.container -->
     </nav>
-    
+
 </head>
