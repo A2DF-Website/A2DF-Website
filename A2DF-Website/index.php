@@ -24,7 +24,7 @@ include ('head.php');
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('img/slide_web_1.png');"></div>
+                <div class="fill" style="background-image:url('img/slide_web.jpg');"></div>
                 <div class="carousel-caption ">
                     <h2></h2>
                 </div>
