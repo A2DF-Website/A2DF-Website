@@ -22,7 +22,7 @@ try {
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Produits
-                    <small></small>
+                    <small>en magasin (selon stock disponible)</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.php">Accueil</a>
@@ -59,7 +59,7 @@ try {
                         <div class = 'row'>
                             <?php
                             global $connexion;
-                            $listeProduit = $connexion->query(" SELECT idProduit, produit.libelle AS nom, marque.libelle AS marque, type.libelle AS type, prix, image, occasion
+                            $listeProduit = $connexion->query(" SELECT idProduit, produit.libelle AS nom, marque.libelle AS marque, type.libelle AS type, prix, image, etat
                                                                 FROM produit, marque, type
                                                                 WHERE produit.idMarque = marque.idMarque
                                                                 AND produit.idType = type.idType
@@ -74,25 +74,29 @@ try {
                                 $marque = $produit['marque'];
                                 $prix = $produit['prix'];
                                 $image = $produit['image'];
-                                $occasion = $produit['occasion'];
+                                $etat = $produit['etat'];
 
-                                echo "<div class = 'col-md-3 col-sm-4 col-xs-12 img-portfolio text-center'>";
-                                echo "<div class='panel panel-default text-center'>";
-                                echo "<div class='panel-body'>";
-                                echo "<img class = 'img-responsive img-hover' src = 'produits/" . $image . "' alt = ''>";
-                                echo "</div>";
-                                echo "<div class='panel-heading'>";
-                                echo "<h3><span>" . $marque . " </span>";
-                                echo "<span>" . $libelle . " </span>";
-                                echo "<br />";
-                                echo "<span class='label label-warning'>" . $prix . "€</span> ";
+                                echo "<div class = 'col-md-3 col-sm-6 col-xs-12 img-portfolio text-center'>";
+                                echo "  <div class='panel panel-default text-center'>";
+                                echo "      <div class='panel-body'>";
+                                ?>          <img class='img-responsive img-hover' src='produits/<?= $image ?>' onError="this.onerror=null;this.src='produits/Souris.png';"><?php
+                                echo "      </div>";
+                                echo "      <div class='panel-heading'>";
+                                echo "          <h3>";
+                                echo "              <span><b>" . $marque . " </b></span>";
+                                echo "              <span>" . $libelle . " </span>";
+                                echo "              <br />";
+                                echo "              <span class='label label-default'>" . $prix . "€</span> ";
 
-                                if ($occasion == 1) {
-                                    echo "<span class='label label-danger'>Occasion</span><h3>";
+                                if ($etat == 1) {
+                                    echo "          <span class='label label-warning'>Occasion</span>";
+                                } else if ($etat == 2) {
+                                    echo "          <span class='label label-danger'>Destockage</span>";
                                 }
 
-                                echo "</div>";
-                                echo "</div>";
+                                echo "          </h3>";
+                                echo "      </div>";
+                                echo "  </div>";
                                 echo "</div>";
                             }
                             ?>
