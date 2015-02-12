@@ -142,56 +142,56 @@ include ('head.php');
                                 <h2 class="page-header">Logiciels préinstallés</h2>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                <a href="http://www.kaspersky.fr/" title="Kaspersky"><img class="img-responsive customer-img" src="img/kaspersky.png" alt="" width="64px" height="64px"></a>
+                                <a href="http://www.kaspersky.fr/" target="_blank" title="Kaspersky"><img class="img-responsive customer-img" src="img/kaspersky.png" alt="" width="64px" height="64px"></a>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                <a href="https://www.mozilla.org/fr/" title="Firefox"><img class="img-responsive customer-img" src="img/firefox.png" alt="" width="64px" height="64px"></a>
+                                <a href="https://www.mozilla.org/fr/" target="_blank" title="Firefox"><img class="img-responsive customer-img" src="img/firefox.png" alt="" width="64px" height="64px"></a>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                <a href="https://www.google.com/chrome/" title="Chrome"><img class="img-responsive customer-img" src="img/chrome.png" alt="" width="64px" height="64px"></a>
+                                <a href="https://www.google.com/chrome/" target="_blank" title="Chrome"><img class="img-responsive customer-img" src="img/chrome.png" alt="" width="64px" height="64px"></a>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                <a href="http://www.java.com/fr/" title="Java"><img class="img-responsive customer-img" src="img/java.png" alt="" width="64px" height="64px"></a>
+                                <a href="http://www.java.com/fr/" target="_blank" title="Java"><img class="img-responsive customer-img" src="img/java.png" alt="" width="64px" height="64px"></a>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                <a href="http://www.win-rar.com/" title="winRAR"><img class="img-responsive customer-img" src="img/winrar.png" alt="" width="64px" height="64px"></a>
+                                <a href="http://www.win-rar.com/" target="_blank" title="winRAR"><img class="img-responsive customer-img" src="img/winrar.png" alt="" width="64px" height="64px"></a>
                             </div>
 
                         </div>
                         </br>
                         <div class="row-centered">
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                <a href="http://www.teamviewer.com/fr/" title="Team Viewer"><img class="img-responsive customer-img" src="img/teamviewer.png" alt="" width="64px" height="64px"></a>
+                                <a href="http://www.teamviewer.com/fr/" target="_blank" title="Team Viewer"><img class="img-responsive customer-img" src="img/teamviewer.png" alt="" width="64px" height="64px"></a>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                <a href="http://www.google.com/intl/fr/picasa/" title="Picasa"><img class="img-responsive customer-img" src="img/picasa.png" alt="" width="64px" height="64px"></a>
+                                <a href="http://www.google.com/intl/fr/picasa/" target="_blank" title="Picasa"><img class="img-responsive customer-img" src="img/picasa.png" alt="" width="64px" height="64px"></a>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                <a href="http://www.videolan.org/vlc/" title="VLC"><img class="img-responsive customer-img" src="img/vlc.png" alt="" width="64px" height="64px"></a>
+                                <a href="http://www.videolan.org/vlc/" target="_blank" title="VLC"><img class="img-responsive customer-img" src="img/vlc.png" alt="" width="64px" height="64px"></a>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                 <a href="http://www.skype.com/fr/" title="Skype"><img class="img-responsive customer-img" src="img/skype.png" alt="" width="64px" height="64px"></a>
+                                 <a href="http://www.skype.com/fr/" target="_blank" title="Skype"><img class="img-responsive customer-img" src="img/skype.png" alt="" width="64px" height="64px"></a>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                <a href="http://www.apple.com/fr/itunes/download/" title="iTunes"><img class="img-responsive customer-img" src="img/itunes.png" alt="" width="64px" height="64px"></a>
+                                <a href="http://www.apple.com/fr/itunes/download/" target="_blank" title="iTunes"><img class="img-responsive customer-img" src="img/itunes.png" alt="" width="64px" height="64px"></a>
                             </div>
                         </div>
                         </br>
                         <div class="row-centered">
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                <a href="https://www.openoffice.org/fr/" title="Open Office"><img class="img-responsive customer-img" src="img/openoffice.png" alt="" width="64px" height="64px"></a>
+                                <a href="https://www.openoffice.org/fr/" target="_blank" title="Open Office"><img class="img-responsive customer-img" src="img/openoffice.png" alt="" width="64px" height="64px"></a>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                <a href="https://www.apple.com/fr/quicktime/download/" title="Quick Time"><img class="img-responsive customer-img" src="img/quicktime.png" alt="" width="64px" height="64px"></a>
+                                <a href="https://www.apple.com/fr/quicktime/download/" target="_blank" title="Quick Time"><img class="img-responsive customer-img" src="img/quicktime.png" alt="" width="64px" height="64px"></a>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                <a href="https://www.piriform.com/ccleaner" title="Ccleaner"><img class="img-responsive customer-img" src="img/ccleaner.png" alt="" width="64px" height="64px"></a>
+                                <a href="https://www.piriform.com/ccleaner" target="_blank" title="Ccleaner"><img class="img-responsive customer-img" src="img/ccleaner.png" alt="" width="64px" height="64px"></a>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                <a href="http://fr.malwarebytes.org/" title="MalwareBytes"><img class="img-responsive customer-img" src="img/malwarebytes.png" alt="" width="64px" height="64px"></a>
+                                <a href="http://fr.malwarebytes.org/" target="_blank" title="MalwareBytes"><img class="img-responsive customer-img" src="img/malwarebytes.png" alt="" width="64px" height="64px"></a>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                <a href="http://get.adobe.com/fr/reader/" title="MalwareBytes"><img class="img-responsive customer-img" src="img/adobe.png" alt="" width="64px" height="64px"></a>
+                                <a href="http://get.adobe.com/fr/reader/" target="_blank" title="MalwareBytes"><img class="img-responsive customer-img" src="img/adobe.png" alt="" width="64px" height="64px"></a>
                             </div>
                         </div>
 
