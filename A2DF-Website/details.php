@@ -16,7 +16,7 @@ try {
 $id = filter_input(INPUT_GET, "id");
 
 global $connexion;
-$listeProduit = $connexion->query(" SELECT idProduit, produit.libelle AS nom, marque.libelle AS marque, type.libelle AS type, prix, image, etat, info1, info2, info3, info4, info5
+$listeProduit = $connexion->query(" SELECT idProduit, produit.libelle AS nom, produit.idType AS idType, marque.libelle AS marque, type.libelle AS type, prix, image, etat, info1, info2, info3, info4, info5
                                     FROM produit, marque, type
                                     WHERE produit.idMarque = marque.idMarque
                                     AND produit.idType = type.idType
@@ -27,6 +27,7 @@ foreach ($listeProduit as $produit) {
     //Récupération des données dans la base
     $idProduit = $produit['idProduit'];
     $libelle = $produit['nom'];
+    $idType = $produit['idType'];
     $marque = $produit['marque'];
     $prix = $produit['prix'];
     $image = $produit['image'];
@@ -58,7 +59,7 @@ foreach ($listeProduit as $produit) {
             </div>
         </div>
         <!-- /.row -->
-        
+
         <!-- Portfolio Item Row -->
         <div class="row">
 
@@ -67,7 +68,7 @@ foreach ($listeProduit as $produit) {
             </div>
 
             <div class="col-md-6">
-                <h2><b><?= $marque . " "?></b><?= $libelle ?></h2>
+                <h2><b><?= $marque . " " ?></b><?= $libelle ?></h2>
                 <h3>Caracteristiques techniques</h3>
                 <ul>
                     <li><?= $info1 ?></li>
@@ -77,42 +78,35 @@ foreach ($listeProduit as $produit) {
                     <li><?= $info5 ?></li>
                 </ul>
                 <h3><span class='label label-default'><?= $prix ?>€</span>
-                <span class='label label-warning'>Occasion</span></h3>
+                    <span class='label label-warning'>Occasion</span></h3>
             </div>
 
         </div>
         <!-- /.row -->
-        
+
         <!-- Related Projects Row -->
         <div class="row">
 
             <div class="col-lg-12">
-                <h3 class="page-header">Related Projects</h3>
+                <h3 class="page-header">Produits de la même catégorie</h3>
             </div>
 
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
+            <?php
+            $random = rand(1, 100);
+            global $connexion;
+            $randomProduit = $connexion->query("SELECT idProduit, image
+                                                FROM produit
+                                                WHERE produit.idType = $idType
+                                                AND produit.idProduit = $random;");
 
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
-                </a>
-            </div>
+            for ($i = 1; $i < 5; $i++) {
+                echo "<div class='col-sm-3 col-xs-6'>";
+                echo "  <a href='#'>";
+                echo "      <img class='img-responsive img-hover img-related' src='http://placehold.it/500x300' alt=''>";
+                echo "  </a>";
+                echo "</div>";
+            }
+            ?>
 
         </div>
         <!-- /.row -->
