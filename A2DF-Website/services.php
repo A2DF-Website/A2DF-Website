@@ -219,6 +219,8 @@ include ('head.php');
                             <p>
                             <div><b><u>A2DF Informatique peut vous dépanner à votre domicile.</u></b></div> Ce service est mis en place afin de servir, entre aute,  les personnes à mobilité réduite et toutes personnes ne disposant pas de véhicule de transport. Ce service engendre un coût supplémentaire calculé en fonction du temps qui sépare la boutique à votre domicile.
                             </p>
+                            <hr>
+                            <img src="img/zone.png" class="img-responsive center-block" width="60%">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="service-four">
@@ -248,7 +250,7 @@ include ('head.php');
                                 <li><b>Formation à la demande</b></li>
                             </ul>
                             <hr>
-                            <img src="img/zone.png" class="img-responsive center-block" width="60%">
+                            <img src="img/zoneformation.png" class="img-responsive center-block" width="60%">
                         </div>
                     </div>
                 </div>

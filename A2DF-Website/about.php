@@ -80,22 +80,22 @@ include ('head.php');
                 <h2 class="page-header">Nos partenaires</h2>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="img/roy.png" alt="">
+                <a href="http://www.roy-maconnerie.fr/" target="_blank"><img class="img-responsive customer-img" src="img/roy.png" alt=""></a>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="img/orge.png" alt="">
+                <a href="http://www.orge-et-olives.com/" target="_blank"><img class="img-responsive customer-img" src="img/orge.png" alt=""></a>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="img/sevre.png" alt="">
+                <a href="http://www.tv-sevreetmaine.fr/" target="_blank"><img class="img-responsive customer-img" src="img/sevre.png" alt=""></a>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
+                <a href="http://travaux.finition.44.free.fr/" target="_blank"><img class="img-responsive customer-img" src="img/jlm.jpg" alt=""></a>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
+                <a href="http://www.aes-geothermie.fr/" target="_blank"><img class="img-responsive customer-img" src="img/AES.PNG" alt=""></a>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <img class="img-responsive customer-img" src="http://placehold.it/500x300" alt="">
+                <a href="http://www.proxsite.fr/" target="_blank"><img class="img-responsive customer-img" src="img/proxsite.PNG" alt=""></a>
             </div>
         </div>
         <!-- /.row -->
