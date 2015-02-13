@@ -78,10 +78,10 @@ try {
 
                                 echo "<div class = 'col-md-3 col-sm-6 col-xs-12 img-portfolio text-center'>";
                                 echo "  <div class='panel panel-default text-center'>";
-                                echo "      <div class='panel-body'>";
-                                ?>          <a href="details.php?id=<?= $idProduit ?>"><img class='img-responsive img-hover' src='produits/<?= $image ?>' onError="this.onerror=null;this.src='produits/Souris.png';"></a><?php
+                                echo "      <div class='panel-body' style='height: 200px;'>";
+                                ?>          <a href="details.php?id=<?= $idProduit ?>"><img class='img-responsive img-hover center-block' src='produits/<?= $image ?>' onError="this.onerror=null;this.src='produits/Souris.png';" style="max-height: 170px;"></a><?php
                                 echo "      </div>";
-                                echo "      <div class='panel-heading'>";
+                                echo "      <div class='panel-heading' style='height: 130px;'>";
                                 echo "          <h3>";
                                 echo "              <span><b>" . $marque . " </b></span>";
                                 echo "              <span>" . $libelle . " </span>";

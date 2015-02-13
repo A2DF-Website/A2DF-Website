@@ -64,7 +64,7 @@ foreach ($listeProduit as $produit) {
         <div class="row">
 
             <div class="col-md-6">
-                <img class="img-responsive center-block" src="produits/<?= $image ?>" style="max-height: 500px;">
+                <img class="img-responsive center-block" src="produits/<?= $image ?>" style="height: 500px;">
             </div>
 
             <div class="col-md-6">
@@ -91,23 +91,103 @@ foreach ($listeProduit as $produit) {
                 <h3 class="page-header">Produits de la même catégorie</h3>
             </div>
 
-            <?php
-            $random = rand(1, 100);
-            global $connexion;
-            $randomProduit = $connexion->query("SELECT idProduit, image
-                                                FROM produit
-                                                WHERE produit.idType = $idType
-                                                AND produit.idProduit = $random;");
+        </div>
 
-            for ($i = 1; $i < 5; $i++) {
-                echo "<div class='col-sm-3 col-xs-6'>";
-                echo "  <a href='#'>";
-                echo "      <img class='img-responsive img-hover img-related' src='http://placehold.it/500x300' alt=''>";
-                echo "  </a>";
-                echo "</div>";
-            }
-            ?>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="col-sm-2 col-xs-6">
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive img-hover img-related" src="produits/portable_acer.jpg" style="height: 100px">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive img-hover img-related" src="produits/pc_hp.jpg" style="height: 100px">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive img-hover img-related" src="produits/galaxy_tab.jpg" style="height: 100px">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive img-hover img-related" src="produits/souris_wireless.jpg" style="height: 100px">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-sm-2 col-xs-6">
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive img-hover img-related" src="produits/portable_acer.jpg" style="height: 100px">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive img-hover img-related" src="produits/pc_hp.jpg" style="height: 100px">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive img-hover img-related" src="produits/galaxy_tab.jpg" style="height: 100px">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive img-hover img-related" src="produits/souris_wireless.jpg" style="height: 100px">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-sm-2 col-xs-6">
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive img-hover img-related" src="produits/portable_acer.jpg" style="height: 100px">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive img-hover img-related" src="produits/pc_hp.jpg" style="height: 100px">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive img-hover img-related" src="produits/galaxy_tab.jpg" style="height: 100px">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                                <a href="#">
+                                    <img class="img-responsive img-hover img-related" src="produits/souris_wireless.jpg" style="height: 100px">
+                                </a>
+                            </div>
+                            <div class="col-sm-2 col-xs-6">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
         </div>
         <!-- /.row -->
 
