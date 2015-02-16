@@ -95,7 +95,7 @@ include ('head.php');
                 <a href="http://www.aes-geothermie.fr/" target="_blank"><img class="img-responsive customer-img" src="img/AES.PNG" alt=""></a>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <a href="http://www.proxsite.fr/" target="_blank"><img class="img-responsive customer-img" src="img/proxsite.PNG" alt=""></a>
+                <a href="http://www.proxsite.fr/" target="_blank"><img class="img-responsive customer-img" src="img/proxsite.jpg" alt=""></a>
             </div>
         </div>
         <!-- /.row -->
