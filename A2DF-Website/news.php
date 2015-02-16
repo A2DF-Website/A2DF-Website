@@ -37,7 +37,7 @@ include ('head.php');
 
                 <!-- First Blog Post -->
 
-                <div class="fb-like-box" data-href="https://www.facebook.com/pages/A2DFinformatique/570125046357439" data-height="750" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>
+                <div class="fb-like-box" data-href="https://www.facebook.com/pages/A2DFinformatique/570125046357439" data-height="600" data-colorscheme="light" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>
             </div>
 
             <!-- Blog Sidebar Widgets Column -->
