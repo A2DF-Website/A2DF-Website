@@ -43,7 +43,7 @@ include ('head.php');
             </div>
             <div class="col-md-4 text-center">
                 <div class="thumbnail">
-                    <img class="img-responsive" src="img/françois.JPG" alt="">
+                    <img class="img-responsive" src="img/françois.jpg" alt="">
                     <div class="caption">
                         <h3>François BARAUD<br>
                             <small>Gérant</small>
@@ -53,7 +53,7 @@ include ('head.php');
             </div>
             <div class="col-md-4 text-center">
                 <div class="thumbnail">
-                    <img class="img-responsive" src="img/damien.JPG" alt="">
+                    <img class="img-responsive" src="img/damien.jpg" alt="">
                     <div class="caption">
                         <h3>Damien<br>
                             <small>Technicien</small>
