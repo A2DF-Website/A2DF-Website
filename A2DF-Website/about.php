@@ -28,7 +28,7 @@ include ('head.php');
             </div>
             <div class="col-md-6">
                 <h2>A propos d'A2DF Informatique</h2>
-                <p>Ouvert en décembre 2010, A2DF Informatique a pour vocation de proposer localement tous les services nécessaires à l’exploitation de votre système d’information.</p>
+                <p>Ouvert en janvier 2010, A2DF Informatique a pour vocation de proposer localement tous les services nécessaires à l’exploitation de votre système d’information.</p>
                 <p>Que vous soyez un client particulier ou un artisan, que vous représentiez une PME ou une collectivité, notre but est de vous apporter professionnalisme et réactivité. Une réponse locale dans le domaine de l’informatique, du numérique et du multimédia, est-ce suffisant ?</p>
                 <p>Chez A2DF Informatique, nous pensons que non. Pour nous, rien n’est possible sans confiance et maîtrise des coûts.</p>
                 <p>C’est pour gagner cette confiance que nous avons décidé de nous implanter en plein cœur du vignoble nantais, dans un magasin ouvert à tous,  où vos interlocuteurs sont facilement identifiables. C’est à partir de cette relation humaine privilégiée que nous pouvons ensemble répondre à vos besoins par la qualité et la sérénité.</p>
