@@ -100,7 +100,7 @@ foreach ($listeProduit as $produit) {
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <div class="col-sm-2 col-xs-6">
+                            <div class="col-sm-2 col-xs-0">
                             </div>
                             <div class="col-sm-2 col-xs-6">
                                 <a href="#">
@@ -122,59 +122,7 @@ foreach ($listeProduit as $produit) {
                                     <img class="img-responsive img-hover img-related" src="produits/souris_wireless.jpg" style="height: 100px">
                                 </a>
                             </div>
-                            <div class="col-sm-2 col-xs-6">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-sm-2 col-xs-6">
-                            </div>
-                            <div class="col-sm-2 col-xs-6">
-                                <a href="#">
-                                    <img class="img-responsive img-hover img-related" src="produits/portable_acer.jpg" style="height: 100px">
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-xs-6">
-                                <a href="#">
-                                    <img class="img-responsive img-hover img-related" src="produits/pc_hp.jpg" style="height: 100px">
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-xs-6">
-                                <a href="#">
-                                    <img class="img-responsive img-hover img-related" src="produits/galaxy_tab.jpg" style="height: 100px">
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-xs-6">
-                                <a href="#">
-                                    <img class="img-responsive img-hover img-related" src="produits/souris_wireless.jpg" style="height: 100px">
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-xs-6">
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-sm-2 col-xs-6">
-                            </div>
-                            <div class="col-sm-2 col-xs-6">
-                                <a href="#">
-                                    <img class="img-responsive img-hover img-related" src="produits/portable_acer.jpg" style="height: 100px">
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-xs-6">
-                                <a href="#">
-                                    <img class="img-responsive img-hover img-related" src="produits/pc_hp.jpg" style="height: 100px">
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-xs-6">
-                                <a href="#">
-                                    <img class="img-responsive img-hover img-related" src="produits/galaxy_tab.jpg" style="height: 100px">
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-xs-6">
-                                <a href="#">
-                                    <img class="img-responsive img-hover img-related" src="produits/souris_wireless.jpg" style="height: 100px">
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-xs-6">
+                            <div class="col-sm-2 col-xs-0">
                             </div>
                         </div>
                     </div>
