@@ -68,8 +68,6 @@
                             <li>
                                 <a href="conditions.php">Conditions générales</a>
                             </li>
-                            <li>
-                                <a href="http://192.168.0.30/A2DF/login.php"><i class="fa fa-lock"></i> Admin</a>
                         </ul>
                     </li>
                 </ul>
