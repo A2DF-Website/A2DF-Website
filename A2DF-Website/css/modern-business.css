@@ -69,9 +69,13 @@ header.carousel .fill {
 
 /* Footer Styles */
 
-footer {
-    margin: 50px 0;
+footer{
+  margin-top:40px;
+  padding-top:40px;
+  padding-bottom:40px;
+  background-color:#ededed;
 }
+
 
 /* Responsive Styles */
 
@@ -90,4 +94,13 @@ footer {
     header.carousel .carousel {
         height: 70%;
     }
+}
+
+#fb-root {
+  display: none;
+}
+ 
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
 }

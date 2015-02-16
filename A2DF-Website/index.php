@@ -1,6 +1,8 @@
 <?php
 include ('head.php');
 ?>
+
+
 <body>
 
     <!-- Navigation -->
@@ -52,9 +54,12 @@ include ('head.php');
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">
-                    Bienvenue sur le site A2DF Informatique
-                </h1>
+                <div class="page-header">
+                    <h1> Bienvenue sur le site A2DF Informatique
+                        <a href="https://www.facebook.com/pages/A2DFinformatique/570125046357439"><i class="fa fa-fw fa-facebook-square fa-1x pull-right"></i></a>
+                        <a href="https://twitter.com/A2DFInformatiqu"><i class="fa fa-twitter-square fa-1x pull-right"></i></a></p>
+                    </h1>
+                </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
@@ -145,20 +150,22 @@ include ('head.php');
         <!-- /.row -->
 
         <hr>
-
-        <!-- Footer -->
-        <footer id="footer" class="midnight-blue">
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Copyright &copy; Hugo JEROME & Alexandre TALBOT 2015
-                    <a href="https://www.facebook.com/pages/A2DFinformatique/570125046357439"><i class="fa fa-facebook-square fa-2x pull-right" float="right"></i></a>
-                        <a href="https://twitter.com/A2DFInformatiqu"><i class="fa fa-twitter-square fa-2x pull-right" float="right"></i></a></p>
-
+                    <p>Copyright &copy; Hugo JEROME & Alexandre TALBOT 2015 - 
+                        <a href="https://www.facebook.com/pages/A2DFinformatique/570125046357439"><i class="fa fa-facebook-square fa-2x pull-right"></i></a>
+                        <a href="https://twitter.com/A2DFInformatiqu"><i class="fa fa-twitter-square fa-2x pull-right"></i></a>
+                        <a href="conditions.php">Conditions générales de vente</a></p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-    </div>
+
     <!-- /.container -->
 
     <!-- jQuery -->
