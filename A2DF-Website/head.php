@@ -54,7 +54,7 @@
                         <a href="services.php">Services</a>
                     </li>
                     <li>
-                        <a href="produits.php">Produits</a>
+                        <a href="professionnels.php">Professionnel</a>
                     </li>
                     <li>
                         <a href="contact.php">Contact</a>
@@ -64,9 +64,6 @@
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="news.php">Actualités</a>
-                            </li>
-                            <li>
-                                <a href="professionnels.php">Professionnels</a>
                             </li>
                             <li>
                                 <a href="conditions.php">Conditions générales</a>
