@@ -40,10 +40,10 @@ include ('head.php');
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <a href="#service-one" data-toggle="tab">
-                        <span class="fa-stack fa-5x">
-                            <i class="fa fa-circle fa-stack-2x text-warning"></i>
-                            <i class="fa fa-stethoscope fa-stack-1x fa-inverse"></i>
-                        </span>
+                            <span class="fa-stack fa-5x">
+                                <i class="fa fa-circle fa-stack-2x text-warning"></i>
+                                <i class="fa fa-stethoscope fa-stack-1x fa-inverse"></i>
+                            </span>
                         </a>
                     </div>
                     <div class="panel-body">
@@ -55,10 +55,10 @@ include ('head.php');
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <a href="#service-two" data-toggle="tab">
-                        <span class="fa-stack fa-5x">
-                            <i class="fa fa-circle fa-stack-2x text-warning"></i>
-                            <i class="fa fa-gear fa-stack-1x fa-inverse"></i>
-                        </span>
+                            <span class="fa-stack fa-5x">
+                                <i class="fa fa-circle fa-stack-2x text-warning"></i>
+                                <i class="fa fa-gear fa-stack-1x fa-inverse"></i>
+                            </span>
                         </a>
                     </div>
                     <div class="panel-body">
@@ -70,10 +70,10 @@ include ('head.php');
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <a href="#service-three" data-toggle="tab">
-                        <span class="fa-stack fa-5x">
-                            <i class="fa fa-circle fa-stack-2x text-warning"></i>
-                            <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
-                        </span>
+                            <span class="fa-stack fa-5x">
+                                <i class="fa fa-circle fa-stack-2x text-warning"></i>
+                                <i class="fa fa-wrench fa-stack-1x fa-inverse"></i>
+                            </span>
                         </a>
                     </div>
                     <div class="panel-body">
@@ -85,10 +85,10 @@ include ('head.php');
                 <div class="panel panel-default text-center">
                     <div class="panel-heading">
                         <a href="#service-four" data-toggle="tab">
-                        <span class="fa-stack fa-5x">
-                            <i class="fa fa-circle fa-stack-2x text-warning"></i>
-                            <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
-                        </span>
+                            <span class="fa-stack fa-5x">
+                                <i class="fa fa-circle fa-stack-2x text-warning"></i>
+                                <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                            </span>
                         </a>
                     </div>
                     <div class="panel-body">
@@ -170,7 +170,7 @@ include ('head.php');
                                 <a href="http://www.videolan.org/vlc/" target="_blank" title="VLC"><img class="img-responsive customer-img" src="img/vlc.png" alt="" width="64px" height="64px"></a>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
-                                 <a href="http://www.skype.com/fr/" target="_blank" title="Skype"><img class="img-responsive customer-img" src="img/skype.png" alt="" width="64px" height="64px"></a>
+                                <a href="http://www.skype.com/fr/" target="_blank" title="Skype"><img class="img-responsive customer-img" src="img/skype.png" alt="" width="64px" height="64px"></a>
                             </div>
                             <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6 col-centered">
                                 <a href="http://www.apple.com/fr/itunes/download/" target="_blank" title="iTunes"><img class="img-responsive customer-img" src="img/itunes.png" alt="" width="64px" height="64px"></a>
@@ -261,8 +261,8 @@ include ('head.php');
         <!-- /.row -->
 
         <hr>
-        </div>
-        <!-- Footer -->
+    </div>
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -276,7 +276,7 @@ include ('head.php');
         </div>
     </footer>
 
-    
+
     <!-- /.container -->
 
     <!-- jQuery -->

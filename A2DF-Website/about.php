@@ -101,8 +101,8 @@ include ('head.php');
         <!-- /.row -->
 
         <hr>
-        </div>
-        <!-- Footer -->
+    </div>
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -115,7 +115,7 @@ include ('head.php');
             </div>
         </div>
     </footer>
-    
+
     <!-- /.container -->
 
     <!-- jQuery -->

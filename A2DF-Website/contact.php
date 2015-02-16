@@ -44,16 +44,16 @@ include ('head.php');
                             <abbr title="Email"></abbr>: <a href="mailto:name@example.com">contact@a2dfinformatique.com</a>
                         </p>
                         <ul class="list-unstyled list-inline list-social-icons">
-                    <li>
-                        <a href="https://www.facebook.com/pages/A2DFinformatique/570125046357439"><i class="fa fa-facebook-square fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/A2DFInformatiqu"><i class="fa fa-twitter-square fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/u/0/101285302052580331310/about?hl=fr&gl=fr"><i class="fa fa-google-plus-square fa-2x"></i></a>
-                    </li>
-                </ul>
+                            <li>
+                                <a href="https://www.facebook.com/pages/A2DFinformatique/570125046357439"><i class="fa fa-facebook-square fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/A2DFInformatiqu"><i class="fa fa-twitter-square fa-2x"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/u/0/101285302052580331310/about?hl=fr&gl=fr"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@ include ('head.php');
                 </div>
             </div>
         </div>
-        
+
         <hr>
 
         <!-- /.row -->
@@ -119,8 +119,8 @@ include ('head.php');
         <!-- /.row -->
 
         <hr>
-        </div>
-        <!-- Footer -->
+    </div>
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -134,7 +134,7 @@ include ('head.php');
         </div>
     </footer>
 
-    
+
     <!-- /.container -->
 
     <!-- jQuery -->

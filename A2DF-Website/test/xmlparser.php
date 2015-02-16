@@ -12,7 +12,7 @@
     foreach ($produits as $produit):
         $id = $produit->id;
         $libelle = $produit->libelle;
-        
+
         echo "<tr>";
         echo "<td>", $id, "</td>";
         echo "<td>", $libelle, "</td>";

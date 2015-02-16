@@ -72,37 +72,37 @@ include ('head.php');
                     <!-- /.col-lg-6 -->
                 </div>
                 <!-- /.row -->
-            
+
+
+            </div>
 
         </div>
-        
-    </div>
-    <!-- /.row -->
+        <!-- /.row -->
 
-    <hr>
-</div>
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <p>Copyright &copy; Hugo JEROME & Alexandre TALBOT 2015 - 
-                    <a href="https://www.facebook.com/pages/A2DFinformatique/570125046357439"><i class="fa fa-facebook-square fa-2x pull-right"></i></a>
-                    <a href="https://twitter.com/A2DFInformatiqu"><i class="fa fa-twitter-square fa-2x pull-right"></i></a>
-                    <a href="conditions.php">Conditions générales de vente</a></p>
+        <hr>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright &copy; Hugo JEROME & Alexandre TALBOT 2015 - 
+                        <a href="https://www.facebook.com/pages/A2DFinformatique/570125046357439"><i class="fa fa-facebook-square fa-2x pull-right"></i></a>
+                        <a href="https://twitter.com/A2DFInformatiqu"><i class="fa fa-twitter-square fa-2x pull-right"></i></a>
+                        <a href="conditions.php">Conditions générales de vente</a></p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
-<!-- /.container -->
+    <!-- /.container -->
 
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 

@@ -53,7 +53,7 @@ include ('head.php');
                     </ul>
                     </p>
                     <p>
-                       <i class="fa fa-wrench"></i> <u>Intervention atelier</u> : 
+                        <i class="fa fa-wrench"></i> <u>Intervention atelier</u> : 
                     <ul>
                         <li>
                             Nous intervenons sur vos postes informatique dans notre atelier spécialement équipé pour cela.
@@ -112,8 +112,8 @@ include ('head.php');
         <!-- /.row -->
 
         <hr>
-        </div>
-        <!-- Footer -->
+    </div>
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -127,7 +127,7 @@ include ('head.php');
         </div>
     </footer>
 
-    
+
     <!-- /.container -->
 
     <!-- jQuery -->

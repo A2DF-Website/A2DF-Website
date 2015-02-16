@@ -110,9 +110,9 @@ try {
         </div>
 
         <hr>
-        </div>
+    </div>
 
-        <!-- Footer -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
@@ -126,7 +126,7 @@ try {
         </div>
     </footer>
 
-    
+
     <!-- /.container -->
 
     <!-- jQuery -->

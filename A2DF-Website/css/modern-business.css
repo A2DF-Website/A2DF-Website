@@ -70,10 +70,10 @@ header.carousel .fill {
 /* Footer Styles */
 
 footer{
-  margin-top:30px;
-  padding-top:40px;
-  padding-bottom:30px;
-  background-color:#ededed;
+    margin-top:30px;
+    padding-top:40px;
+    padding-bottom:30px;
+    background-color:#ededed;
 }
 
 
@@ -97,10 +97,10 @@ footer{
 }
 
 #fb-root {
-  display: none;
+    display: none;
 }
- 
+
 /* To fill the container and nothing else */
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
-  width: 100% !important;
+    width: 100% !important;
 }
