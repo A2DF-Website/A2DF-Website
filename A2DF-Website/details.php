@@ -39,13 +39,13 @@ foreach ($produits as $produit) {
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Détails
-                    <small>- <?= $marque . " " . $libelle ?></small>
+                <h1 class="page-header">Produits
+                    <small>- Disponibles en magasin (sous 72h selon stock)</small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="produits.php">Produits</a></li>
-                    <li class="active">Details</li>
+                    <li class="active"><?= $marque . " " . $libelle ?></li>
                 </ol>
             </div>
         </div>
@@ -55,7 +55,7 @@ foreach ($produits as $produit) {
         <div class="row">
 
             <div class="col-md-6">
-                <img class="img-responsive center-block" src="../A2DF/produits/<?= $image ?>" style="height: 500px;">
+                <img class="img-responsive center-block" src="../A2DF/produits/<?= $image ?>">
             </div>
 
             <div class="col-md-6">
@@ -85,24 +85,28 @@ foreach ($produits as $produit) {
         </div>
 
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 container">
 
                 <?php
-                $xml_c1 = file_get_contents('http://localhost/a2df/ws/produit.php');
-                $produits_c1 = simplexml_load_string($xml_c1);
+                $xml_c = file_get_contents('http://localhost/a2df/ws/produit.php');
+                $produits_c = simplexml_load_string($xml_c);
+                $nb_objet = 0;
 
-                foreach ($produits_c1 as $produit_c1) {
+                foreach ($produits_c as $produit_c) {
+                    
+                    $type_c = (int) $produit_c->type;
+                    $nb_objets_max = 6;
 
-                    $type_c1 = (int) $produit_c1->type;
-
-                    if ($type == $type_c1) {
-
-                        $idProduit_c1 = $produit_c1->id;
-                        $image_c1 = $produit_c1->image;
+                    if (($type == $type_c) && ($nb_objet < $nb_objets_max)){
+                        $nb_objet++;
+                        $idProduit_c = $produit_c->id;
+                        $marque_c = $produit_c->marque;
+                        $libelle_c = $produit_c->libelle;
+                        $image_c = $produit_c->image;
                         ?>
-                        <div class='col-sm-2 col-xs-6'>
-                            <a href="details.php?id=<?= $idProduit_c1 ?>">
-                                <img class='img-responsive img-hover img-related' src='../A2DF/produits/<?= $image_c1 ?>' style='height: 100px'>
+                        <div class='col-lg-2 col-sm-4 col-xs-6'>
+                            <a href="details.php?id=<?= $idProduit_c ?>">
+                                <img class='img-responsive img-hover img-related center-block' src='../A2DF/produits/<?= $image_c ?>' title="<?= $marque_c . " " . $libelle_c ?>" style='height: 100px'>
                             </a>
                         </div>
                         <?php
@@ -116,18 +120,22 @@ foreach ($produits as $produit) {
 </div>
 <!-- /.row -->
 
-<hr>
+</div>
 
 <!-- Footer -->
-<footer>
-    <div class="row">
-        <div class="col-lg-12">
-            <p>Copyright &copy; Your Website 2014</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright &copy; Hugo JEROME & Alexandre TALBOT 2015 - 
+                        <a href="https://www.facebook.com/pages/A2DFinformatique/570125046357439"><i class="fa fa-facebook-square fa-2x pull-right"></i></a>
+                        <a href="https://twitter.com/A2DFInformatiqu"><i class="fa fa-twitter-square fa-2x pull-right"></i></a>
+                        <a href="conditions.php">Conditions générales de vente</a></p>
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-</div>
 <!-- /.container -->
 
 <!-- jQuery -->
