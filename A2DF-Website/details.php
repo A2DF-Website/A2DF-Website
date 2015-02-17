@@ -69,7 +69,14 @@ foreach ($produits as $produit) {
                     <li><?= $info5 ?></li>
                 </ul>
                 <h3><span class='label label-default'><?= $prix ?>€</span>
-                    <span class='label label-warning'>Occasion</span></h3>
+
+                    <?php
+                    if ($etat == 1) {
+                        echo "<span class='label label-warning'>Occasion</span></h3>";
+                    } else if ($etat == 2) {
+                        echo "<span class='label label-danger'>Destockage</span></h3>";
+                    }
+                    ?>
             </div>
 
         </div>
@@ -93,11 +100,11 @@ foreach ($produits as $produit) {
                 $nb_objet = 0;
 
                 foreach ($produits_c as $produit_c) {
-                    
+
                     $type_c = (int) $produit_c->type;
                     $nb_objets_max = 6;
 
-                    if (($type == $type_c) && ($nb_objet < $nb_objets_max)){
+                    if (($type == $type_c) && ($nb_objet < $nb_objets_max)) {
                         $nb_objet++;
                         $idProduit_c = $produit_c->id;
                         $marque_c = $produit_c->marque;
@@ -123,18 +130,18 @@ foreach ($produits as $produit) {
 </div>
 
 <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p>Copyright &copy; Hugo JEROME & Alexandre TALBOT 2015 - 
-                        <a href="https://www.facebook.com/pages/A2DFinformatique/570125046357439"><i class="fa fa-facebook-square fa-2x pull-right"></i></a>
-                        <a href="https://twitter.com/A2DFInformatiqu"><i class="fa fa-twitter-square fa-2x pull-right"></i></a>
-                        <a href="conditions.php">Conditions générales de vente</a></p>
-                </div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>Copyright &copy; Hugo JEROME & Alexandre TALBOT 2015 - 
+                    <a href="https://www.facebook.com/pages/A2DFinformatique/570125046357439"><i class="fa fa-facebook-square fa-2x pull-right"></i></a>
+                    <a href="https://twitter.com/A2DFInformatiqu"><i class="fa fa-twitter-square fa-2x pull-right"></i></a>
+                    <a href="conditions.php">Conditions générales de vente</a></p>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
 <!-- /.container -->
 
