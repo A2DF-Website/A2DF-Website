@@ -99,7 +99,7 @@ include ('head.php');
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
-                            <label>Addresse e-mail :</label>
+                            <label>Adresse e-mail :</label>
                             <input type="email" class="form-control" id="email" required data-validation-required-message="Veuillez entrer votre courriel.">
                         </div>
                     </div>
