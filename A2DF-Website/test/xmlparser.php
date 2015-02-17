@@ -1,8 +1,8 @@
 <html>
 
     <?php
-    $xmlstring = file_get_contents('http://localhost/a2df/ws/produit.php');
-    $produits = simplexml_load_string($xmlstring);
+    $xml = file_get_contents('http://localhost/a2df/ws/produit.php');
+    $produits = simplexml_load_string($xml);
 
     echo "<table border='1'>";
     echo "<tr>";

@@ -1,17 +1,5 @@
 <?php
 include ('head.php');
-include('private/conf.php');
-
-define('USER', $mysql_user);
-define('MDP', $mysql_pass);
-define('DSN', $mysql_host);
-try {
-    $connexion = new PDO(DSN, USER, MDP);
-    $connexion->query("SET CHARACTER SET utf8");
-} catch (PDOException $e) {
-    echo "Erreur : " . $e->getMessage() . "<br />";
-    $connexion = null;
-}
 ?>
 
 <body>
@@ -51,53 +39,51 @@ try {
             <hr>
             <div id="myTabContent" class="tab-content">
                 <?php
-                for ($i = 1; $i <= 6; $i++) {
+                for ($i = 1; $i < 7; $i++) {
                     ?>
                     <div class="tab-pane fade active in" id="onglet-<?= $i ?>">
 
                         <!-- Projects Row -->
                         <div class = 'row'>
                             <?php
-                            global $connexion;
-                            $listeProduit = $connexion->query(" SELECT idProduit, produit.libelle AS nom, marque.libelle AS marque, type.libelle AS type, prix, image, etat
-                                                                FROM produit, marque, type
-                                                                WHERE produit.idMarque = marque.idMarque
-                                                                AND produit.idType = type.idType
-                                                                AND produit.idType = $i
-                                                                ORDER BY produit.libelle ASC;");
+                            $xml = file_get_contents('http://localhost/a2df/ws/produit.php');
+                            $produits = simplexml_load_string($xml);
 
-                            foreach ($listeProduit as $produit) {
+                            foreach ($produits as $produit) {
 
-                                //Récupération des données dans la base
-                                $idProduit = $produit['idProduit'];
-                                $libelle = $produit['nom'];
-                                $marque = $produit['marque'];
-                                $prix = $produit['prix'];
-                                $image = $produit['image'];
-                                $etat = $produit['etat'];
+                                $type = $produit->type;
+                                if ($type == $i) {
+                                    //Récupération des données dans la base
+                                    $idProduit = $produit->id;
+                                    $libelle = $produit->libelle;
+                                    $marque = $produit->marque;
+                                    $prix = $produit->prix;
+                                    $image = $produit->image;
+                                    $etat = $produit->etat;
 
-                                echo "<div class = 'col-md-3 col-sm-6 col-xs-12 img-portfolio text-center'>";
-                                echo "  <div class='panel panel-default text-center'>";
-                                echo "      <div class='panel-body' style='height: 200px;'>";
-                                ?>          <a href="details.php?id=<?= $idProduit ?>"><img class='img-responsive img-hover center-block' src='produits/<?= $image ?>' onError="this.onerror=null;this.src='produits/Souris.png';" style="max-height: 170px;"></a><?php
-                                echo "      </div>";
-                                echo "      <div class='panel-heading' style='height: 130px;'>";
-                                echo "          <h3>";
-                                echo "              <span><b>" . $marque . " </b></span>";
-                                echo "              <span>" . $libelle . " </span>";
-                                echo "              <br />";
-                                echo "              <span class='label label-default'>" . $prix . "€</span> ";
+                                    echo "<div class = 'col-md-3 col-sm-6 col-xs-12 img-portfolio text-center'>";
+                                    echo "  <div class='panel panel-default text-center'>";
+                                    echo "      <div class='panel-body' style='height: 200px;'>";
+                                    ?>          <a href="details.php?id=<?= $idProduit ?>"><img class='img-responsive img-hover center-block' src='../A2DF/produits/<?= $image ?>' onError="this.onerror=null;this.src='produits/Souris.png';" style="max-height: 170px;"></a><?php
+                                    echo "      </div>";
+                                    echo "      <div class='panel-heading' style='height: 130px;'>";
+                                    echo "          <h3>";
+                                    echo "              <span><b>" . $marque . " </b></span>";
+                                    echo "              <span>" . $libelle . " </span>";
+                                    echo "              <br />";
+                                    echo "              <span class='label label-default'>" . $prix . "€</span> ";
 
-                                if ($etat == 1) {
-                                    echo "          <span class='label label-warning'>Occasion</span>";
-                                } else if ($etat == 2) {
-                                    echo "          <span class='label label-danger'>Destockage</span>";
+                                    if ($etat == 1) {
+                                        echo "          <span class='label label-warning'>Occasion</span>";
+                                    } else if ($etat == 2) {
+                                        echo "          <span class='label label-danger'>Destockage</span>";
+                                    }
+
+                                    echo "          </h3>";
+                                    echo "      </div>";
+                                    echo "  </div>";
+                                    echo "</div>";
                                 }
-
-                                echo "          </h3>";
-                                echo "      </div>";
-                                echo "  </div>";
-                                echo "</div>";
                             }
                             ?>
                         </div>
