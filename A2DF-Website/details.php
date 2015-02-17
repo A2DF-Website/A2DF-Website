@@ -1,42 +1,33 @@
 <?php
 include ('head.php');
-include('private/conf.php');
-
-define('USER', $mysql_user);
-define('MDP', $mysql_pass);
-define('DSN', $mysql_host);
-try {
-    $connexion = new PDO(DSN, USER, MDP);
-    $connexion->query("SET CHARACTER SET utf8");
-} catch (PDOException $e) {
-    echo "Erreur : " . $e->getMessage() . "<br />";
-    $connexion = null;
-}
 
 $id = filter_input(INPUT_GET, "id");
 
-global $connexion;
-$listeProduit = $connexion->query(" SELECT idProduit, produit.libelle AS nom, produit.idType AS idType, marque.libelle AS marque, type.libelle AS type, prix, image, etat, info1, info2, info3, info4, info5
-                                    FROM produit, marque, type
-                                    WHERE produit.idMarque = marque.idMarque
-                                    AND produit.idType = type.idType
-                                    AND produit.idProduit = $id;");
+if ($id < 1) {
+    header('Location: produits.php');
+}
 
-foreach ($listeProduit as $produit) {
+$xml = file_get_contents('http://localhost/a2df/ws/produit.php');
+$produits = simplexml_load_string($xml);
 
-    //Récupération des données dans la base
-    $idProduit = $produit['idProduit'];
-    $libelle = $produit['nom'];
-    $idType = $produit['idType'];
-    $marque = $produit['marque'];
-    $prix = $produit['prix'];
-    $image = $produit['image'];
-    $etat = $produit['etat'];
-    $info1 = $produit['info1'];
-    $info2 = $produit['info2'];
-    $info3 = $produit['info3'];
-    $info4 = $produit['info4'];
-    $info5 = $produit['info5'];
+foreach ($produits as $produit) {
+
+    $idProduit = $produit->id;
+
+    if ($idProduit == $id) {
+        //Récupération des données dans la base
+        $libelle = $produit->libelle;
+        $type = (int) $produit->type;
+        $marque = $produit->marque;
+        $prix = $produit->prix;
+        $image = $produit->image;
+        $etat = $produit->etat;
+        $info1 = $produit->info1;
+        $info2 = $produit->info2;
+        $info3 = $produit->info3;
+        $info4 = $produit->info4;
+        $info5 = $produit->info5;
+    }
 }
 ?>
 <body>
@@ -64,7 +55,7 @@ foreach ($listeProduit as $produit) {
         <div class="row">
 
             <div class="col-md-6">
-                <img class="img-responsive center-block" src="produits/<?= $image ?>" style="height: 500px;">
+                <img class="img-responsive center-block" src="../A2DF/produits/<?= $image ?>" style="height: 500px;">
             </div>
 
             <div class="col-md-6">
@@ -95,69 +86,55 @@ foreach ($listeProduit as $produit) {
 
         <div class="row">
             <div class="col-md-12">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="col-sm-2 col-xs-0">
-                            </div>
-                            <div class="col-sm-2 col-xs-6">
-                                <a href="#">
-                                    <img class="img-responsive img-hover img-related" src="produits/portable_acer.jpg" style="height: 100px">
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-xs-6">
-                                <a href="#">
-                                    <img class="img-responsive img-hover img-related" src="produits/pc_hp.jpg" style="height: 100px">
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-xs-6">
-                                <a href="#">
-                                    <img class="img-responsive img-hover img-related" src="produits/galaxy_tab.jpg" style="height: 100px">
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-xs-6">
-                                <a href="#">
-                                    <img class="img-responsive img-hover img-related" src="produits/souris_wireless.jpg" style="height: 100px">
-                                </a>
-                            </div>
-                            <div class="col-sm-2 col-xs-0">
-                            </div>
+                <?php
+                $xml_c1 = file_get_contents('http://localhost/a2df/ws/produit.php');
+                $produits_c1 = simplexml_load_string($xml_c1);
+
+                foreach ($produits_c1 as $produit_c1) {
+
+                    $type_c1 = (int) $produit_c1->type;
+
+                    if ($type == $type_c1) {
+
+                        $idProduit_c1 = $produit_c1->id;
+                        $image_c1 = $produit_c1->image;
+                        ?>
+                        <div class='col-sm-2 col-xs-6'>
+                            <a href="details.php?id=<?= $idProduit_c1 ?>">
+                                <img class='img-responsive img-hover img-related' src='../A2DF/produits/<?= $image_c1 ?>' style='height: 100px'>
+                            </a>
                         </div>
-                    </div>
+                        <?php
+                    }
+                }
+                ?>
 
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div>
             </div>
         </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
-
     </div>
-    <!-- /.container -->
+</div>
+<!-- /.row -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+<hr>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- Footer -->
+<footer>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>Copyright &copy; Your Website 2014</p>
+        </div>
+    </div>
+</footer>
+
+</div>
+<!-- /.container -->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 
