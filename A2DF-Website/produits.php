@@ -3,6 +3,7 @@ include ('head.php');
 ?>
 
 <body>
+    
     <!-- Page Content -->
     <div class="container">
 
@@ -20,10 +21,10 @@ include ('head.php');
             </div>
         </div>
         <!-- /.row -->
-
+        
         <div class="col-lg-12">
             <ul id="myTab" class="nav nav-tabs nav-justified">
-                <li class="active"><a href="#onglet-1" data-toggle="tab"><i class="fa fa-briefcase"></i> Accessoires</a>
+                <li class=""><a href="#onglet-1" data-toggle="tab"><i class="fa fa-briefcase"></i> Accessoires</a>
                 </li>
                 <li class=""><a href="#onglet-2" data-toggle="tab"><i class="fa fa-tablet"></i> Tablettes</a>
                 </li>
