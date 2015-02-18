@@ -27,6 +27,9 @@ foreach ($produits as $produit) {
         $info3 = $produit->info3;
         $info4 = $produit->info4;
         $info5 = $produit->info5;
+        $info6 = $produit->info6;
+        $info7 = $produit->info7;
+        $info8 = $produit->info8;
     }
 }
 ?>
@@ -62,11 +65,16 @@ foreach ($produits as $produit) {
                 <h2><b><?= $marque . " " ?></b><?= $libelle ?></h2>
                 <h3>Caracteristiques techniques</h3>
                 <ul>
-                    <li><?= $info1 ?></li>
-                    <li><?= $info2 ?></li>
-                    <li><?= $info3 ?></li>
-                    <li><?= $info4 ?></li>
-                    <li><?= $info5 ?></li>
+                    <?php
+                    if ($info1 <> ""){ echo "<li>" . $info1 . "</li>"; }
+                    if ($info2 <> ""){ echo "<li>" . $info2 . "</li>"; }
+                    if ($info3 <> ""){ echo "<li>" . $info3 . "</li>"; }
+                    if ($info4 <> ""){ echo "<li>" . $info4 . "</li>"; }
+                    if ($info5 <> ""){ echo "<li>" . $info5 . "</li>"; }
+                    if ($info6 <> ""){ echo "<li>" . $info6 . "</li>"; }
+                    if ($info7 <> ""){ echo "<li>" . $info7 . "</li>"; }
+                    if ($info8 <> ""){ echo "<li>" . $info8 . "</li>"; }
+                    ?>
                 </ul>
                 <h3><span class='label label-default'><?= $prix ?>€</span>
 
@@ -86,7 +94,7 @@ foreach ($produits as $produit) {
         <div class="row">
 
             <div class="col-lg-12">
-                <h3 class="page-header">Produits de la même catégorie</h3>
+                <h3 class="page-header">Derniers produits ajoutés</h3>
             </div>
 
         </div>
