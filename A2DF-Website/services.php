@@ -120,18 +120,18 @@ include ('head.php');
                     <div class="tab-pane fade active in" id="service-one">
                         <h4>Diagnostic</h4>
                         <p>
-                            A2DF Informatique est constituée d'un technicien hautement qualifié afin de répondre au mieux à vos interrogations et vos problèmes techniques tels qu'ils soient. Il vous suffit d'apporter votre tour, ordinateur portable, tablette, ... et nous diagnostiquerons vos outils informatiques gratuitement !
+                            A2DF Informatique est constituée d'un technicien hautement qualifié afin de répondre au mieux à vos interrogations et vos problèmes techniques quels qu'ils soient. Il vous suffit d'apporter votre tour, ordinateur portable, tablette, ... et nous diagnostiquerons vos outils informatiques gratuitement !
                         </p>
                         <p>
-                            Lors d'un dépôt chez A2DF Informatique, nous tendons toujours à raccourcir votre délais d'attente, c'est pourquoi nous nous efforcons, dès <u>72h Maximum</u> d'attente, à vous tenir informer de la suite des réparations.
+                            Lors d'un dépôt chez A2DF Informatique, nous tendons toujours à raccourcir votre délais d'attente, c'est pourquoi nous nous efforcons, en <u>72h Maximum</u> d'attente, de vous tenir informé de la suite des réparations.
                         </p>
                         <img class="img-responsive center-block" src="img/devisgratuit.png" alt="" width="150px" height="150px">
                     </div>
                     <div class="tab-pane fade" id="service-two">
                         <h4>Montage PC</h4>
                         <p>
-                            A2DF vous proposes la création et le montage d'une ordinateur fixe en maximum 72 heures (selon disponibilités des stocks)
-                            En effet, l'entreprise vous conseilleras sur les futures composants de la machines en fonctions de vos besoins. Ceci débouchant sur un devis gratuit. 
+                            A2DF vous propose la création et le montage d'un ordinateur fixe en maximum 72 heures (selon disponibilité des stocks)
+                            En effet, l'entreprise vous conseillera sur les futurs composants de la machines en fonctions de vos besoins. Ceci débouchant sur un devis gratuit. 
                         </p>
                         <p>
                             De plus, afin de vous offrir nos meilleurs services, nous vous installons automatiquement les logiciels suivants :

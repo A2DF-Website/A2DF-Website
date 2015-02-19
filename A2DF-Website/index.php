@@ -121,14 +121,14 @@ include ('head.php');
             </div>
             <div class="col-md-6">
                 <div class="well">
-                    <p>1. Un service de qualité adaptés à vos besoins:</p>
+                    <p>1. Un service de qualité adapté à vos besoins:</p>
                     <ul>
                         <li>Nous vous conseillons</li>
                         <li>Nous réalisons l'assemblage</li>
                         <li>Nous offrons un service de dépannage à domicile</li>
                         <li>Nous nous rendons disponible pour les professionnels</li>
                     </ul>
-                    <p>2. Service après vente efficace et rapide</p>
+                    <p>2. Service après-vente efficace et rapide</p>
                     <ul>
                         <li>Nos diagnostics et devis sont gratuits !</li>
                         <li>Notre équipe de spécialiste réalise toutes réparations</li>
@@ -138,7 +138,7 @@ include ('head.php');
                         <li>Diagnostic et Devis Gratuits</li>
                         <li>Un véritable conseil et avis de professionnel</li>
                         <li>Des garanties de 2 à 10 ans</li>
-                        <li>Nous traitons le service après vente nous-mêmes</li>
+                        <li>Nous traitons le service après-vente nous-mêmes</li>
                     </ul>
                     <img src="img/satisfait.PNG" class="media-left" width="15%" alt="Circular Image">
                 </div>
