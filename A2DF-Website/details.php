@@ -3,15 +3,17 @@ include ('head.php');
 
 $id = filter_input(INPUT_GET, "id");
 
-if ($id < 1) {
-    header('Location: produits.php');
-}
-
 $xml = file_get_contents('http://localhost/a2df/ws/produit.php');
 $magasin = simplexml_load_string($xml);
 $online = $magasin->online;
 
-if ($online == 0) {
+$listeIdProduits = array();
+foreach ($magasin->produits->produit as $idproduit) {
+    $idprod = $idproduit->id;
+    array_push($listeIdProduits, $idprod);
+}
+
+if ((!in_array($id, $listeIdProduits)) || ($online == 0)) {
     header('Location: produits.php');
 }
 
