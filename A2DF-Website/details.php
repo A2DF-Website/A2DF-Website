@@ -163,7 +163,7 @@ foreach ($magasin->produits->produit as $produit) {
 </div>
 
 <!-- Footer -->
-<footer class="footer">
+<footer class="footer" id = "footer">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
