@@ -7,13 +7,17 @@ $xml = file_get_contents('http://localhost/a2df/ws/produit.php');
 $magasin = simplexml_load_string($xml);
 $online = $magasin->online;
 
+if ($online == 0) {
+    header('Location: produits.php');
+}
+
 $listeIdProduits = array();
 foreach ($magasin->produits->produit as $idproduit) {
     $idprod = $idproduit->id;
     array_push($listeIdProduits, $idprod);
 }
 
-if ((!in_array($id, $listeIdProduits)) || ($online == 0)) {
+if (!in_array($id, $listeIdProduits)) {
     header('Location: produits.php');
 }
 
@@ -41,7 +45,6 @@ foreach ($magasin->produits->produit as $produit) {
 }
 ?>
 <body>
-
 
     <!-- Page Content -->
     <div class="container">
@@ -151,7 +154,6 @@ if ($etat == 1) {
     }
 }
 ?>
-
             </div>
         </div>
     </div>
