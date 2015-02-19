@@ -8,11 +8,13 @@
 
 html,
 body {
-    height: 100%;
+   margin:0;
+   padding:0;
+   height:100%;
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .img-portfolio {
@@ -69,15 +71,37 @@ header.carousel .fill {
 
 /* Footer Styles */
 
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   background:#ff0;
+   padding:10px;
+}
+#body {
+   padding:10px;
+   padding-bottom:100px;   /* Height of the footer */
+}
+#footer {
+   position:absolute;
+    margin-top:30px;
+    padding-top:40px;
+    padding-bottom:30px;
+    background-color:#ededed;
+    bottom: 0px;
+    width: 100%;
+}
+
 footer{
     margin-top:30px;
     padding-top:40px;
     padding-bottom:30px;
     background-color:#ededed;
-    bottom:0;
+    bottom: 0px;
+    width: 100%;
 
 }
-
 
 /* Responsive Styles */
 

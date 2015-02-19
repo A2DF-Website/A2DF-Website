@@ -1,9 +1,9 @@
 <?php
 include ('head.php');
 ?>
-
+<div id="container">
 <body>
-
+    <div id="body">
     <!-- Page Content -->
     <div class="container">
 
@@ -104,9 +104,9 @@ include ('head.php');
                         ?>
                         <hr>
                     </div>
-
+                        </div>
                     <!-- Footer -->
-                    <footer class="footer">
+                    <footer class="footer" id = "footer">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12">
@@ -118,7 +118,7 @@ include ('head.php');
                             </div>
                         </div>
                     </footer>
-
+                    </div>
 
                     <!-- /.container -->
 
