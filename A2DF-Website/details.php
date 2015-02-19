@@ -8,9 +8,14 @@ if ($id < 1) {
 }
 
 $xml = file_get_contents('http://localhost/a2df/ws/produit.php');
-$produits = simplexml_load_string($xml);
+$magasin = simplexml_load_string($xml);
+$online = $magasin->online;
 
-foreach ($produits as $produit) {
+if ($online == 0) {
+    header('Location: produits.php');
+}
+
+foreach ($magasin->produits->produit as $produit) {
 
     $idProduit = $produit->id;
 
@@ -66,25 +71,41 @@ foreach ($produits as $produit) {
                 <h3>Caracteristiques techniques</h3>
                 <ul>
                     <?php
-                    if ($info1 <> ""){ echo "<li>" . $info1 . "</li>"; }
-                    if ($info2 <> ""){ echo "<li>" . $info2 . "</li>"; }
-                    if ($info3 <> ""){ echo "<li>" . $info3 . "</li>"; }
-                    if ($info4 <> ""){ echo "<li>" . $info4 . "</li>"; }
-                    if ($info5 <> ""){ echo "<li>" . $info5 . "</li>"; }
-                    if ($info6 <> ""){ echo "<li>" . $info6 . "</li>"; }
-                    if ($info7 <> ""){ echo "<li>" . $info7 . "</li>"; }
-                    if ($info8 <> ""){ echo "<li>" . $info8 . "</li>"; }
+                    if ($info1 <> "") {
+                        echo "<li>" . $info1 . "</li>";
+                    }
+                    if ($info2 <> "") {
+                        echo "<li>" . $info2 . "</li>";
+                    }
+                    if ($info3 <> "") {
+                        echo "<li>" . $info3 . "</li>";
+                    }
+                    if ($info4 <> "") {
+                        echo "<li>" . $info4 . "</li>";
+                    }
+                    if ($info5 <> "") {
+                        echo "<li>" . $info5 . "</li>";
+                    }
+                    if ($info6 <> "") {
+                        echo "<li>" . $info6 . "</li>";
+                    }
+                    if ($info7 <> "") {
+                        echo "<li>" . $info7 . "</li>";
+                    }
+                    if ($info8 <> "") {
+                        echo "<li>" . $info8 . "</li>";
+                    }
                     ?>
                 </ul>
                 <h3><span class='label label-default'><?= $prix ?>€</span>
 
-                    <?php
-                    if ($etat == 1) {
-                        echo "<span class='label label-warning'>Occasion</span></h3>";
-                    } else if ($etat == 2) {
-                        echo "<span class='label label-danger'>Destockage</span></h3>";
-                    }
-                    ?>
+<?php
+if ($etat == 1) {
+    echo "<span class='label label-warning'>Occasion</span></h3>";
+} else if ($etat == 2) {
+    echo "<span class='label label-danger'>Destockage</span></h3>";
+}
+?>
             </div>
 
         </div>
@@ -104,10 +125,10 @@ foreach ($produits as $produit) {
 
                 <?php
                 $xml_c = file_get_contents('http://localhost/a2df/ws/produit.php');
-                $produits_c = simplexml_load_string($xml_c);
+                $magasin_c = simplexml_load_string($xml_c);
                 $nb_objet = 0;
 
-                foreach ($produits_c as $produit_c) {
+                foreach ($magasin_c->produits->produit as $produit_c) {
 
                     $type_c = (int) $produit_c->type;
                     $nb_objets_max = 6;
@@ -124,10 +145,10 @@ foreach ($produits as $produit) {
                                 <img class='img-responsive img-hover img-related center-block' src='../A2DF/produits/<?= $image_c ?>' title="<?= $marque_c . " " . $libelle_c ?>" onError="this.onerror=null;this.src='../A2DF/produits/notfound.png';" style='height: 100px'>
                             </a>
                         </div>
-                        <?php
-                    }
-                }
-                ?>
+        <?php
+    }
+}
+?>
 
             </div>
         </div>

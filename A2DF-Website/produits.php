@@ -98,7 +98,7 @@ include ('head.php');
                             ?>
 
                             <div class="col-lg-12">CATALOGUE EN MAINTENANCE, MERCI DE REESSAYER ULTERIEUREMENT</div>
-
+                            <br/>
                             <?php
                         }
                         ?>
