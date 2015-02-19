@@ -97,7 +97,11 @@ include ('head.php');
                                 } else {
                                     ?>
 
-                                    <div class="col-lg-12">CATALOGUE EN MAINTENANCE, MERCI DE REESSAYER ULTERIEUREMENT</div>
+                                    <div class="col-lg-12">
+                                        <div class="alert alert-warning text-center">
+                                            <span class="alert-link"><i class="fa fa-exclamation-triangle"></i> Catalogue en maintenance, merci de réessayer ultérieurement <i class="fa fa-exclamation-triangle"></i></span>
+                                        </div>
+                                    </div>
                                     <br/>
                                     <?php
                                 }
