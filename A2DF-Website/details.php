@@ -104,13 +104,13 @@ foreach ($magasin->produits->produit as $produit) {
                 </ul>
                 <h3><span class='label label-default'><?= $prix ?>€</span>
 
-<?php
-if ($etat == 1) {
-    echo "<span class='label label-warning'>Occasion</span></h3>";
-} else if ($etat == 2) {
-    echo "<span class='label label-danger'>Destockage</span></h3>";
-}
-?>
+                    <?php
+                    if ($etat == 1) {
+                        echo "<span class='label label-warning'>Occasion</span></h3>";
+                    } else if ($etat == 2) {
+                        echo "<span class='label label-danger'>Destockage</span></h3>";
+                    }
+                    ?>
             </div>
 
         </div>
@@ -150,10 +150,10 @@ if ($etat == 1) {
                                 <img class='img-responsive img-hover img-related center-block' src='../A2DF/produits/<?= $image_c ?>' title="<?= $marque_c . " " . $libelle_c ?>" onError="this.onerror=null;this.src='../A2DF/produits/notfound.png';" style='height: 100px'>
                             </a>
                         </div>
-        <?php
-    }
-}
-?>
+                        <?php
+                    }
+                }
+                ?>
             </div>
         </div>
     </div>
