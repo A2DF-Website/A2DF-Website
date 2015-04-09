@@ -92,7 +92,7 @@ include ('head.php');
                 <a href="http://travaux.finition.44.free.fr/" target="_blank"><img class="img-responsive customer-img" src="img/jlm.jpg" alt=""></a>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <a href="http://www.aes-geothermie.fr/" target="_blank"><img class="img-responsive customer-img" src="img/aes.PNG" alt=""></a>
+                <a href="http://www.aes-geothermie.fr/" target="_blank"><img class="img-responsive customer-img" src="img/aes.png" alt=""></a>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
                 <a href="http://www.proxsite.fr/" target="_blank"><img class="img-responsive customer-img" src="img/proxsite.jpg" alt=""></a>
