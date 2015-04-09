@@ -22,7 +22,7 @@ include ('head.php');
                 </div>
                 <!-- /.row -->
                 <?php
-                $xml = file_get_contents('http://localhost/a2df/ws/produit.php');
+                $xml = file_get_contents('http://gestinter.a2dfinformatique.com/ws/produit.php');
                 $magasin = simplexml_load_string($xml);
                 $online = $magasin->online;
 
