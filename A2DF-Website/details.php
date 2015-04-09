@@ -3,7 +3,7 @@ include ('head.php');
 
 $id = filter_input(INPUT_GET, "id");
 
-$xml = file_get_contents('http://localhost/a2df/ws/produit.php');
+$xml = file_get_contents('http://gestinter.a2dfinformatique.com/ws/produit.php');
 $magasin = simplexml_load_string($xml);
 $online = $magasin->online;
 
@@ -69,7 +69,7 @@ foreach ($magasin->produits->produit as $produit) {
                 <div class="row">
 
                     <div class="col-md-6">
-                        <img class="img-responsive center-block" src="../A2DF/produits/<?= $image ?>" onError="this.onerror=null;this.src='../A2DF/produits/notfound.png';">
+                        <img class="img-responsive center-block" src="http://gestinter.a2dfinformatique.com/produits/<?= $image ?>" onError="this.onerror=null;this.src='../A2DF/produits/notfound.png';">
                     </div>
 
                     <div class="col-md-6">
@@ -130,7 +130,7 @@ foreach ($magasin->produits->produit as $produit) {
                     <div class="col-md-12 container">
 
                         <?php
-                        $xml_c = file_get_contents('http://localhost/a2df/ws/produit.php');
+                        $xml_c = file_get_contents('http://gestinter.a2dfinformatique.com/ws/produit.php');
                         $magasin_c = simplexml_load_string($xml_c);
                         $nb_objet = 0;
 
@@ -148,7 +148,7 @@ foreach ($magasin->produits->produit as $produit) {
                                 ?>
                                 <div class='col-lg-2 col-sm-4 col-xs-6'>
                                     <a href="details.php?id=<?= $idProduit_c ?>">
-                                        <img class='img-responsive img-hover img-related center-block' src='../A2DF/produits/<?= $image_c ?>' title="<?= $marque_c . " " . $libelle_c ?>" onError="this.onerror=null;this.src='../A2DF/produits/notfound.png';" style='height: 100px'>
+                                        <img class='img-responsive img-hover img-related center-block' src='http://gestinter.a2dfinformatique.com/produits/<?= $image_c ?>' title="<?= $marque_c . " " . $libelle_c ?>" onError="this.onerror=null;this.src='../A2DF/produits/notfound.png';" style='height: 100px'>
                                     </a>
                                 </div>
                                 <?php
